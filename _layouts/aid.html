@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Keuzehulp bij abonnementen
 ---
 
-<div class="aid-progress"></div>
+<div class="aid-progress">
+    <div class="aid-progress__bar a a-si-left {{ page.progress-width }}"></div>
+</div>
 <section class="pt-3 pb-4 pv-6-sm gd-r-yellow a a-fi a-del-200">
     <div class="container container--narrow">
         <div class="mb-1-sm-max">
-            <a class="arrowLink arrowLink--back arrowLink--blue">Terug</a>
+            <a href="{{ page.back }}" class="arrowLink arrowLink--back arrowLink--blue">Terug</a>
         </div>
         <header class="aid a a-fi-right-200px a-dur-1000 a-del-200">
             <img src="/assets/img/miriam.jpg" alt="miriam" class="aid__img mb-2 mb-4-sm" />
@@ -23,12 +24,22 @@ title: Keuzehulp bij abonnementen
         <div class="aid a a-fi-right-200px a-dur-1200 a-del-200">
             <h2 class="f-blue f24 lh-title f38-sm mb-4 mb-6-sm">{{ page.question }}</h2>
             {% for entry in page.answers %}
-                {% capture lenght %}{{ forloop.length }}{% endcapture %}
+            {% capture lenght %}{{ forloop.length }}{% endcapture %}
             {% endfor %}
-         
-            <div class="g {% if lenght=='2' %}g-2{% endif %} gap-3 mxw-400 mh-auto">
+            <div class="g {% if lenght=='2' and page.tile!=true %}g-2{% endif %} gap-3 mxw-400 mh-auto">
                 {% for entry in page.answers %}
-                <button class="button btn-ghost">{{ entry }}</button>
+                {% unless page.tile %}
+                <a href="/keuzehulp/{{ entry.link }}" class="button btn-ghost">{{ entry.label }}</a>
+                {% else %}
+                <a href="/keuzehulp/{{ entry.link }}" class="btn-ghost fw-normal br-4 pa-2">
+                    <div>
+                        {{ entry.label }}
+                    </div>
+                    <div class="f14 f-grey-4">
+                        {{ entry.description }}
+                    </div>
+                </a>
+                {% endunless %}
                 {% endfor %}
             </div>
         </div>

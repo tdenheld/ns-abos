@@ -23,14 +23,11 @@
     position: relative;
     height: 6px;
     background-color: $ns-grey-8;
+}
 
-    &:after {
-        content: '';
-        @include full(absolute);
-        width: 33%;
-        border-radius: 0 8px 8px 0;
-        background-color: $ns-light-blue;
-        @extend .a;
-        @extend .a-si-left;
-    }
+.aid-progress__bar {
+    content: '';
+    @include full(absolute);
+    border-radius: 0 8px 8px 0;
+    background-color: $ns-light-blue;
 }

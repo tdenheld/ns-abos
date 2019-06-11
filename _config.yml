@@ -20,3 +20,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "/keuzehulp"
+    values:
+      layout: "aid"
