@@ -5,7 +5,7 @@ layout: default
 <div class="aid-progress">
     <div class="aid-progress__bar a a-si-left {{ page.progress-width }}"></div>
 </div>
-<section class="pt-3 pb-4 pv-6-sm gd-r-yellow a a-fi a-del-200">
+<section class="pt-3 pb-4 pv-6-sm gd-r-yellow a a-fi">
     <div class="container container--narrow">
         <div class="mb-1-sm-max">
             <a onclick="window.history.back();" class="arrowLink arrowLink--back arrowLink--blue">Terug</a>
@@ -20,9 +20,9 @@ layout: default
 </section>
 
 {% if page.question %}
-<section class="pv-4 pv-6-sm a a-fi a-del-400">
+<section class="pv-4 pv-6-sm">
     <div class="container container--narrow">
-        <div class="aid a a-fi-right-200px a-dur-900 a-del-200">
+        <div class="aid a a-fi-right-200px a-dur-900">
             <h2 class="f-blue f24 lh-title f38-sm mb-4 mb-6-sm">{{ page.question }}</h2>
             {% for entry in page.answers %}
             {% capture lenght %}{{ forloop.length }}{% endcapture %}
