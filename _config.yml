@@ -21,6 +21,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "/keuzehulp"
+      path: "keuzehulp"
     values:
       layout: "aid"
+      bg: "bg-white"

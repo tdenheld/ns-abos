@@ -19,6 +19,7 @@ layout: default
     </div>
 </section>
 
+{% if page.question %}
 <section class="pv-4 pv-6-sm a a-fi a-del-400">
     <div class="container container--narrow">
         <div class="aid a a-fi-right-200px a-dur-900 a-del-200">
@@ -49,3 +50,6 @@ layout: default
     </div>
     <div class="pb-8 pb-16-sm"></div>
 </section>
+{% endif %}
+
+{{ content }}
