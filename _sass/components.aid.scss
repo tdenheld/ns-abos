@@ -1,0 +1,36 @@
+.aid {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aid__img {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid $ns-white;
+
+    @include sm {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+// progress bar
+.aid-progress {
+    position: relative;
+    height: 6px;
+    background-color: $ns-grey-8;
+
+    &:after {
+        content: '';
+        @include full(absolute);
+        width: 33%;
+        border-radius: 0 8px 8px 0;
+        background-color: $ns-light-blue;
+        @extend .a;
+        @extend .a-si-left;
+    }
+}
