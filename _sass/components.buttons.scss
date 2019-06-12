@@ -169,6 +169,38 @@
     }
 }
 
+.button-tile {
+    padding: $half-gutter;
+    border: 1px solid $ns-light-blue;
+    border-radius: 4px;
+    color: $ns-light-blue;
+    transition: $fade-link;
+
+    &:hover {
+        border-color: $ns-blue;
+        color: $ns-blue;
+
+        svg {
+            fill: $ns-blue;
+        }
+
+        .button-tile__description {
+            color: $ns-blue;
+        }
+    }
+
+    svg {
+        transition: $fade-link;
+        fill: $ns-light-blue;
+    }
+}
+
+.button-tile__description {
+    font-size: toRem(14px);
+    color: $ns-grey-4;
+    transition: $fade-link;
+}
+
 
 
 
