@@ -5,6 +5,7 @@ layout: default
 <div class="aid-progress">
     <div class="aid-progress__bar a a-si-left {{ page.progress-width }}"></div>
 </div>
+
 <section class="pt-3 pb-4 pv-6-sm gd-r-yellow a a-fi">
     <div class="container container--narrow">
         <div class="mb-1-sm-max">
@@ -52,4 +53,26 @@ layout: default
 </section>
 {% endif %}
 
-{{ content }}
+{% if page.results %}
+<section class="pt-3 pb-4 pv-6-sm a a-fi-right-200px a-dur-900">
+    <div class="container container--narrow">
+        <div class="g gap-3 mxw-500 mh-auto">
+            {% for result in page.results %}
+                {% capture i %}{{ result.title }}{% endcapture %}
+                {% assign results=site.data.abos | where: 'title', i %}
+                
+                {% for entry in results %}
+                <div>
+                    {% if result.description %}
+                    <p class="f14 mt-2 mb-1 ml-3">
+                        {{ result.description }}
+                    </p>
+                    {% endif %}
+                    {% include abo-tile.html %}
+                </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

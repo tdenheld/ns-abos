@@ -1,0 +1,28 @@
+---
+title: Overzicht alle abonnementen
+results:
+  - title: Zonder Abonnement
+  - title: Weekend Voordeel
+  - title: Dal Voordeel
+    highlight: Meest gekozen
+  - title: Altijd Voordeel
+  - title: Weekend Vrij
+  - title: Dal Vrij
+  - title: Altijd Vrij
+  - title: Traject Vrij
+---
+
+<section class="pt-3 pb-4 pv-6-sm a a-fi-right-200px a-dur-900">
+    <div class="container container--narrow">
+        <div class="abo-grid">
+            {% for result in page.results %}
+                {% capture i %}{{ result.title }}{% endcapture %}
+                {% assign results=site.data.abos | where: 'title', i %}
+                    {% for entry in results %}
+                        {% include abo-tile.html %}
+                    {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

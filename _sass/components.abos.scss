@@ -1,0 +1,76 @@
+// grid
+// ---------------------------------
+.abo-grid {
+    display: grid;
+    grid-gap: 21px;
+
+    @include m {
+        grid-gap: $gutter;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+// tile
+// ---------------------------------
+.abo-tile {
+    position: relative;
+    padding: 21px;
+    background: $ns-white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: $fade-all;
+
+    &:hover {
+        box-shadow: $box-shadow-medium;
+
+        &:after {
+            opacity: 0;
+        }
+    }
+}
+
+.abo-tile--hightlight:after {
+    content: '';
+    @include full(absolute);
+    border: 1px solid $ns-yellow;
+    border-radius: 4px;
+    transition: $fade-all;
+}
+
+.abo-tile__grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.abo-tile__details {
+    margin: 0;
+    list-style: none;
+
+    li {
+        margin: 0 0 4px;
+        padding: 0;
+        @include font(14px, normal, $lh-copy);
+        color: $ns-grey-4;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.abo-tile__highlight {
+    position: absolute;
+    z-index: 1;
+    top: -13px;
+    display: inline-block;
+    padding: 3px 16px;
+    border-radius: 100px;
+    background-color: $ns-yellow;
+    color: $ns-blue;
+    font-size: toRem(14px);
+}

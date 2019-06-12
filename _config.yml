@@ -23,5 +23,6 @@ defaults:
   - scope:
       path: "keuzehulp"
     values:
+      title: Keuzehulp abonnementen
       layout: "aid"
       bg: "bg-white"
