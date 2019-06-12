@@ -34,12 +34,18 @@
     }
 }
 
-.abo-tile--hightlight:after {
-    content: '';
-    @include full(absolute);
-    border: 1px solid $ns-yellow;
-    border-radius: 4px;
-    transition: $fade-all;
+.abo-tile--hightlight {
+    @include m-max {
+        margin-top: 4px;
+    }
+
+    &:after {
+        content: '';
+        @include full(absolute);
+        border: 1px solid $ns-yellow;
+        border-radius: 4px;
+        transition: $fade-all;
+    }
 }
 
 .abo-tile__grid {
@@ -67,8 +73,9 @@
     position: absolute;
     z-index: 1;
     top: -13px;
+    left: 11px;
     display: inline-block;
-    padding: 3px 16px;
+    padding: 3px 12px;
     border-radius: 100px;
     background-color: $ns-yellow;
     color: $ns-blue;
