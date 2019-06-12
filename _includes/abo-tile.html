@@ -8,7 +8,9 @@
         <div>
             <div class="abo-tile__grid">
                 <h2 class="f-blue f18 f20-sm lh-title mb-1">{{ entry.title }}</h2>
+                {% if entry.price-message %}
                 <p class="f14 f-blue txt-r ml-2">{{ entry.price-message }}</p>
+                {% endif %}
             </div>
             <ul class="abo-tile__details">
                 {% for detail in entry.details %}
