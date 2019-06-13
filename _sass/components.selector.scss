@@ -2,7 +2,7 @@
     position: relative;
     margin-bottom: $half-gutter;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: $border-radius;
     transition: $fade-all;
     cursor: pointer;
 
@@ -10,7 +10,7 @@
         content: "";
         @include full(absolute);
         border: 1px solid $ns-grey-6b;
-        border-radius: 4px;
+        border-radius: $border-radius;
         transition: $fade-all;
     }
 
