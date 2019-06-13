@@ -24,27 +24,16 @@
     border-radius: 4px;
     cursor: pointer;
     transition: $fade-all;
+    box-shadow: 0 4px 8px rgba($ns-blue, 0.075);
 
     &:hover {
-        box-shadow: $box-shadow-medium;
-
-        &:after {
-            opacity: 0;
-        }
+        box-shadow: 0 4px 25px rgba($ns-blue, 0.2);
     }
 }
 
 .abo-tile--hightlight {
     @include m-max {
         margin-top: 4px;
-    }
-
-    &:after {
-        content: '';
-        @include full(absolute);
-        border: 1px solid $ns-yellow;
-        border-radius: 4px;
-        transition: $fade-all;
     }
 }
 
