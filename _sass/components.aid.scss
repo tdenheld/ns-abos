@@ -18,6 +18,27 @@
     }
 }
 
+.aid__back {
+    @include center(inline-flex);
+    width: 35px;
+    height: 35px;
+    border: 1px solid $ns-blue;
+    border-radius: 50%;
+    cursor: pointer;
+
+    svg {
+        fill: $ns-blue;
+        transform: rotate(180deg);
+        transition: $fade-link;
+    }
+
+    &:hover {
+        svg {
+            transform: translateX(-3px) rotate(180deg);
+        }
+    }
+}
+
 // progress bar
 .aid-progress {
     position: relative;

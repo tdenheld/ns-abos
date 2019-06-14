@@ -1,3 +1,9 @@
+body {
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
 hr {
     height: 1px;
     border: 0;

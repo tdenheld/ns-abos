@@ -39,6 +39,7 @@ function toggle() {
         });
     };
 };
+
 function radio() {
     var obj = $(".js-radio");
     if (obj[0]) {
@@ -48,6 +49,7 @@ function radio() {
         });
     };
 };
+
 function clearSession() {
     var obj = $(".js-clear-session");
     if (obj[0]) {
@@ -62,6 +64,29 @@ $(function () {
     clearSession();
 });
 
+
+
+// show price info
+// ------------------------------------------------------------
+function showPriceInfo() {
+    const $init = $('.js-show-price-info');
+    const obj = '.js-price-info';
+
+    if ($init[0]) {
+        const tl = TweenLite.to(obj, 0.5, {
+            ease: Power4.easeOut,
+            delay: 1.5,
+            opacity: 1,
+            y: '0%',
+            x: '0%',
+            display: 'block',
+            onComplete() {
+                tl.reverse().timeScale(1.5).delay(9);
+            }
+        });
+    }
+};
+showPriceInfo();
 
 
 

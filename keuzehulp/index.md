@@ -4,7 +4,7 @@ person: Hallo, mijn naam is Miriam. Ik help je bij het kiezen van het juiste abo
 question: Heb je al een abonnement van NS?
 answers:
   - label: Ja
-    link: abo
+    link: abo__check
   - label: Nee
-    link: wanneer
+    link: geen-abo__wanneer
 ---

@@ -1532,19 +1532,22 @@
     </div>
 </header>
     <div class="content js-content bg-white">
-        <div class="aid-progress">
-    <div class="aid-progress__bar a a-si-left w-75"></div>
+        
+<div class="aid-progress">
+    <div class="aid-progress__bar a a-si-left w-50"></div>
 </div>
+
 
 <section class="pt-3 pb-4 pv-6-sm gd-r-yellow a a-fi">
     <div class="container container--narrow">
         <div class="mb-1-sm-max">
             <a onclick="window.history.back();" class="arrowLink arrowLink--back arrowLink--blue">Terug</a>
+            <!-- <span onclick="window.history.back();" class="aid__back"><svg xmlns="http://www.w3.org/2000/svg" width="7.1" height="11" viewBox="0 0 7.1 11"><title>chevron-m--small</title><polygon points="5.5 5.5 0 11 1.6 11 7.1 5.5 1.6 0 0 0 5.5 5.5"/></svg></span> -->
         </div>
         <header class="aid a a-fi-right-200px a-dur-600 a-del-200">
             <img src="/assets/img/miriam.jpg" alt="miriam" class="aid__img mb-2 mb-4-sm" />
             <h1 class="f-blue fw-normal f18 f28-sm">
-                We zijn er bijna. Nog een laatste vraag.
+                Oké helder, laten we nu kijken naar de manier van betalen
             </h1>
         </header>
     </div>
@@ -1554,30 +1557,28 @@
 <section class="pv-4 pv-6-sm">
     <div class="container container--narrow">
         <div class="aid a a-fi-right-200px a-dur-900">
-            <h2 class="f-blue f24 lh-title f38-sm mb-4 mb-6-sm">Welk dagdeel reis je voornamelijk met de trein?</h2>
+            <h2 class="f-blue f24 f38-sm lh-title mb-4 mb-6-sm">Heb je een NS Flex abonnement?</h2>
             
-            <div class="g  gap-2 mxw-400 mh-auto mb-4 mb-6-sm">
+            <div class="g g-2 gap-2 mxw-400 mh-auto mb-4 mb-6-sm">
                 
                 
-                <a href="/keuzehulp/resultaten" class="button btn-ghost">In de spits</a>
-                
-                
-                
-                <a href="/keuzehulp/resultaten" class="button btn-ghost">Buiten de spits</a>
+                <a href="/keuzehulp/abo__keuzedagen" class="button btn-ghost">Ja</a>
                 
                 
                 
-                <a href="/keuzehulp/resultaten" class="button btn-ghost">Allebei</a>
+                <a href="/keuzehulp/abo__keuzedagen" class="button btn-ghost">Nee</a>
                 
                 
             </div>
             
-            <p class="f-grey-4 f14 f16-sm">De spits is maandag t/m vrijdag tussen<br>06.30 - 09.00 en 16.00 - 18.30 uur</p>
+            <p class="mxw-400 mh-auto f-grey-4 f14 f16-sm">Betaal je maandelijks een factuur voor je reiskosten? Dan heb je NS Flex.</p>
             
         </div>
     </div>
     <div class="pb-8 pb-16-sm"></div>
 </section>
+
+
 
 
 
@@ -1619,7 +1620,14 @@
         </div>
     </div>
 </footer>
-
+    <ul class="price-info is-hidden js-price-info">
+        <li>
+            Prijzen zijn abonnementskosten <b>exclusief reiskosten</b>.
+        </li>
+        <li>
+            De getoonde korting heeft effect op je gemaakte ritten met NS.
+        </li>
+    </ul>
 
     <!-- JAVASCRIPT -->
     <script src="/assets/js/ns.generic.min.js"></script>

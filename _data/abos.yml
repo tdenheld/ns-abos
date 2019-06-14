@@ -52,3 +52,9 @@
   - Onbeperkt reizen op een vast traject
   - 40% korting op andere trajecten
   price-message: Prijs trajectafhankelijk
+
+- title: Voordeeluren&shy;abonnement
+  details:
+  - 40% korting na 09.00 en in het weekend
+  price: 67
+  period: jaar

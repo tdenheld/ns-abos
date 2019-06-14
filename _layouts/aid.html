@@ -2,14 +2,17 @@
 layout: default
 ---
 
+{% unless page.no-progress-bar %}
 <div class="aid-progress">
     <div class="aid-progress__bar a a-si-left {{ page.progress-width }}"></div>
 </div>
+{% endunless %}
 
 <section class="pt-3 pb-4 pv-6-sm gd-r-yellow a a-fi">
     <div class="container container--narrow">
         <div class="mb-1-sm-max">
             <a onclick="window.history.back();" class="arrowLink arrowLink--back arrowLink--blue">Terug</a>
+            <!-- <span onclick="window.history.back();" class="aid__back">{% include icons/chevron-m--small.svg %}</span> -->
         </div>
         <header class="aid a a-fi-right-200px a-dur-600 a-del-200">
             <img src="/assets/img/miriam.jpg" alt="miriam" class="aid__img mb-2 mb-4-sm" />
@@ -24,7 +27,7 @@ layout: default
 <section class="pv-4 pv-6-sm">
     <div class="container container--narrow">
         <div class="aid a a-fi-right-200px a-dur-900">
-            <h2 class="f-blue f24 lh-title f38-sm mb-4 mb-6-sm">{{ page.question }}</h2>
+            <h2 class="f-blue f24 f38-sm lh-title mb-4 mb-6-sm">{{ page.question }}</h2>
             {% for entry in page.answers %}
             {% capture lenght %}{{ forloop.length }}{% endcapture %}
             {% endfor %}
@@ -45,7 +48,7 @@ layout: default
                 {% endfor %}
             </div>
             {% if page.description %}
-            <p class="f-grey-4 f14 f16-sm">{{ page.description }}</p>
+            <p class="mxw-400 mh-auto f-grey-4 f14 f16-sm">{{ page.description }}</p>
             {% endif %}
         </div>
     </div>
@@ -54,27 +57,53 @@ layout: default
 {% endif %}
 
 {% if page.results %}
-<section class="pt-5 pb-4 pv-6-sm a a-fi-right-200px a-dur-900">
+<section class="pv-4 pv-6-sm a a-fi-right-200px a-dur-900">
+    <template class="js-show-price-info"></template>
     <div class="container container--narrow">
         <div class="g gap-3 mxw-500 mh-auto mb-4">
             {% for result in page.results %}
-                {% capture i %}{{ result.title }}{% endcapture %}
-                {% assign results=site.data.abos | where: 'title', i %}
+            {% capture i %}{{ result.title }}{% endcapture %}
+            {% assign results=site.data.abos | where: 'title', i %}
 
-                {% for entry in results %}
-                <div>
-                    {% if result.description %}
-                    <p class="f14 mt-2 mb-1 ml-3">
-                        {{ result.description }}
-                    </p>
-                    {% endif %}
-                    {% include abo-tile.html %}
-                </div>
-                {% endfor %}
+            {% for entry in results %}
+            <div>
+                {% if result.description %}
+                <p class="f14 mt-2 mb-1 ml-3">
+                    {{ result.description }}
+                </p>
+                {% endif %}
+                {% include abo-tile.html %}
+            </div>
+            {% endfor %}
             {% endfor %}
         </div>
-        <div class="center">
-            <a href="/overzicht" class="button btn-ghost">Bekijk alle abonnementen</a>
+        <div class="txt-c mxw-300 mh-auto">
+            {% unless page.abo %}
+            <a href="/alle-abonnementen" class="unlink button btn-ghost w-100">Bekijk alle abonnementen</a>
+            {% else %}
+            <a href="/keuzehulp/abo__selecteer" class="button w-100 mb-2">Vergelijk met huidig abonnement</a>
+            <a href="/alle-abonnementen" class="unlink tk-link-icon">Bekijk alle abonnementen</a>
+            {% endunless %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if page.select %}
+<section class="pv-4 pv-6-sm a a-fi-right-200px a-dur-900">
+    <div class="container container--narrow">
+        <div class="txt-c mxw-500 mh-auto mb-4 mb-6-sm">
+            <h2 class="f-blue fw-b f24 f32-sm lh-title mb-2">{{ page.subtitle }}</h2>
+            <p>{{ page.description }}</p>
+        </div>
+        <div class="abo-grid">
+            {% for result in page.select %}
+            {% capture i %}{{ result.title }}{% endcapture %}
+            {% assign results=site.data.abos | where: 'title', i %}
+            {% for entry in results %}
+            {% include abo-tile.html %}
+            {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </section>

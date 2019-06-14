@@ -1,0 +1,28 @@
+.price-info {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    padding: 21px;
+    margin: 0;
+    max-width: 400px;
+    background-color: $ns-blue;
+    color: $ns-white;
+    opacity: 0;
+    transform: translateY(100%);
+    list-style-image: none;
+    list-style-type: square;
+
+    li {
+        padding-left: 3px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @include sm {
+        margin: 14px;
+        border-radius: 4px;
+    }
+}
