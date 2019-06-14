@@ -24,5 +24,6 @@
     @include sm {
         margin: 14px;
         border-radius: 4px;
+        transform: translateX(100%);
     }
 }
