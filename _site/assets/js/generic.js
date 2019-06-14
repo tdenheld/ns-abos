@@ -73,7 +73,7 @@ function showPriceInfo() {
     const obj = '.js-price-info';
 
     if ($init[0]) {
-        let tl = TweenLite.to(obj, 0.5, {
+        var tl = TweenLite.to(obj, 0.5, {
             ease: Power4.easeOut,
             delay: 1.5,
             opacity: 1,
