@@ -71,19 +71,29 @@ $(function () {
 function showPriceInfo() {
     const $init = $('.js-show-price-info');
     const obj = '.js-price-info';
+    const $close = $('.js-hide-price-info');
 
     if ($init[0]) {
         var tl = TweenLite.to(obj, 0.5, {
             ease: Power4.easeOut,
-            delay: 1.5,
+            delay: 2,
             opacity: 1,
             y: '0%',
             x: '0%',
-            display: 'block',
-            onComplete() {
-                tl.reverse().timeScale(1.5).delay(9);
-            }
+            display: 'block'
         });
+
+        $close.click(() => {
+            tl.reverse().timeScale(1.5);
+        });
+
+        if (mobile) {
+            $(document).click(function (e) {
+                if (!$(e.target).closest(obj).length) {
+                    tl.reverse().timeScale(1.5);
+                }
+            });
+        };
     }
 };
 showPriceInfo();
