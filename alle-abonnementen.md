@@ -2,6 +2,9 @@
 layout: overview
 title: Alle abonnementen
 bg: bg-grey-8
+aid:
+  title: Welke past bij jou?
+  link: Naar keuzehulp
 results:
   - title: Zonder Abonnement
   - title: Weekend Voordeel

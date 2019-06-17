@@ -74,31 +74,30 @@ function showPriceInfo() {
     const $close = $('.js-hide-price-info');
     let isOpened = sessionStorage.getItem('price-info');
 
-    if ($init[0]) {
-        if (!isOpened) {
-            var tl = TweenLite.to(obj, 0.5, {
-                ease: Power4.easeOut,
-                delay: 2,
-                opacity: 1,
-                y: '0%',
-                x: '0%',
-                display: 'block'
-            });
+    if ($init[0] && !isOpened) {
+        var tl = TweenLite.to(obj, 0.5, {
+            ease: Power4.easeOut,
+            delay: 1.5,
+            opacity: 1,
+            y: '0%',
+            x: '0%',
+            display: 'block'
+        });
 
-            $close.click(() => {
-                tl.reverse().timeScale(1.5);
-            });
+        $close.click(() => {
+            tl.reverse().timeScale(1.5);
+        });
 
-            if (mobile) {
-                $(document).click(function (e) {
-                    if (!$(e.target).closest(obj).length) {
-                        tl.reverse().timeScale(1.5);
-                    }
-                });
-            };
-            sessionStorage.setItem('price-info', true);
+        if (mobile) {
+            $(document).click(function (e) {
+                if (!$(e.target).closest(obj).length) {
+                    tl.reverse().timeScale(1.5);
+                }
+            });
         };
-    }
+
+        sessionStorage.setItem('price-info', true);
+    };
 };
 showPriceInfo();
 
