@@ -8,15 +8,28 @@ layout: default
     </div>
 </section>
 
+<section class="gd-r-yellow pv-2 pv-4-sm mb-4 mb-8-sm a a-fi a-del-250">
+    <div class="container container--narrow">
+        <div>
+            <img src="/assets/img/miriam.jpg" alt="miriam" class="aid__img aid__img--small mr-1" />
+            <a href="/keuzehulp" class="arrowLink arrowLink--blue mr-6">Miriam helpt je kiezen</a>
+        </div>
+    </div>
+</section>
+
 <section class="pb-4 pb-8-sm">
     <div class="container container--narrow">
+        <template class="js-show-price-info"></template>
+        <div class="mb-2 a a-fi a-del-250">
+            <span class="tk-link-icon">{% include icons/info--small.svg %} Spitstijden</span>
+        </div>
         <div class="abo-grid">
             {% for result in page.results %}
-                {% capture i %}{{ result.title }}{% endcapture %}
-                {% assign results=site.data.abos | where: 'title', i %}
-                    {% for entry in results %}
-                        {% include abo-tile.html %}
-                    {% endfor %}
+            {% capture i %}{{ result.title }}{% endcapture %}
+            {% assign results=site.data.abos | where: 'title', i %}
+            {% for entry in results %}
+            {% include abo-tile.html %}
+            {% endfor %}
             {% endfor %}
         </div>
     </div>
