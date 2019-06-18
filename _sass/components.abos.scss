@@ -5,6 +5,7 @@
     @extend .gd-r-pale-blue;
     margin-bottom: $gutter;
     padding: $gutter 0;
+    border-bottom: 1px solid rgba($ns-blue, 0.1);
 
     @include sm {
         margin-bottom: $one-half-gutter;
