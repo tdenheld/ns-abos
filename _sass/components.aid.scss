@@ -20,6 +20,10 @@
         width: 48px;
         height: 48px;
     }
+
+    &--blue {
+        border-color: $ns-light-blue;
+    }
 }
 
 .aid__back {
