@@ -1,3 +1,27 @@
+// hero
+// ---------------------------------
+.abo-hero {
+    position: relative;
+    @extend .gd-r-pale-blue;
+    margin-bottom: $gutter;
+    padding: $gutter 0;
+
+    @include sm {
+        margin-bottom: $one-half-gutter;
+        padding: $double-gutter 0;
+    }
+
+    @include md {
+        &:before {
+            content: '';
+            @include full(absolute);
+            background-image: url('/assets/img/illustration.svg');
+            background-repeat: no-repeat;
+            background-position: 60vw -23%;
+        }
+    }
+}
+
 // grid
 // ---------------------------------
 .abo-grid {
