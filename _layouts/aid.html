@@ -119,3 +119,20 @@ layout: default
     </div>
 </section>
 {% endif %}
+
+{% if page.compare %}
+<section class="pv-4 pv-6-sm">
+    <div class="container container--narrow">
+        <div class="aid mb-2 a a-fi-right-200px a-dur-900">
+            {% include compare.html %}
+            <div>
+                <a href="{{ page.button.primairy.url }}" class="button mb-2">{{ page.button.primairy.text }}</a>
+            </div>
+            <div>
+                <a href="{{ page.button.secundairy.url }}"
+                    class="unlink tk-link-icon">{{ page.button.secundairy.text }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

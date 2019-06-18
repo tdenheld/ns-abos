@@ -661,7 +661,8 @@
 /*
 	Base:
 	f = font
-	fw = font-weight
+    fw = font-weight
+    ls = letter-spacing
 	
 	Media Query Extensions:
      -sm = min-width $sm
@@ -810,6 +811,12 @@
 // ----------------------------------------------------------------------
 .fs-i {font-style: italic}
 .fs-u {text-transform: uppercase}
+
+// letter-spacing
+// ----------------------------------------------------------------------
+.ls-normal { letter-spacing: initial;}
+.ls-3 {letter-spacing: -0.3px}
+.ls-5 {letter-spacing: -0.5px}
 
 // word wraps
 // ----------------------------------------------------------------------
