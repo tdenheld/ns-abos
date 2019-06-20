@@ -1,0 +1,34 @@
+---
+layout: aid
+---
+
+<section class="pv-4 pv-6-sm">
+    <div class="container container--narrow">
+        <div class="aid a a-fi-right-200px a-dur-900">
+            <h2 class="f-blue f24 f38-sm lh-title mb-4 mb-6-sm">{{ page.question }}</h2>
+            {% for entry in page.answers %}
+            {% capture lenght %}{{ forloop.length }}{% endcapture %}
+            {% endfor %}
+            <div class="g {% if lenght=='2' and page.tile!=true %}g-2{% endif %} gap-2 mxw-400 mh-auto mb-4 mb-6-sm">
+                {% for entry in page.answers %}
+                {% unless page.tile %}
+                <a href="/keuzehulp/{{ entry.link }}" class="unlink button btn-ghost">{{ entry.label }}</a>
+                {% else %}
+                <a href="/keuzehulp/{{ entry.link }}" class="unlink button-tile">
+                    <div>
+                        {{ entry.label }}
+                    </div>
+                    <div class="button-tile__description">
+                        {{ entry.description }}
+                    </div>
+                </a>
+                {% endunless %}
+                {% endfor %}
+            </div>
+            {% if page.description %}
+            <p class="mxw-400 mh-auto f-grey-4 f14 f16-sm">{{ page.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="pb-8 pb-16-sm"></div>
+</section>

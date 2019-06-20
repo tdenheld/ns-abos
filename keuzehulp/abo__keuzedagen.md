@@ -1,4 +1,5 @@
 ---
+layout: aid-question
 progress-width: w-75
 person:  Duidelijk, je hebt dus Dal Voordeel.
 question: Kom je in aanmerking voor Keuzedagen?

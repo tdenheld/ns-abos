@@ -24,5 +24,4 @@ defaults:
       path: "keuzehulp"
     values:
       title: Keuzehulp abonnementen
-      layout: "aid"
       bg: "bg-white"

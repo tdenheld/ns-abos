@@ -1,4 +1,5 @@
 ---
+layout: aid-select
 bg: bg-grey-8
 progress-width: w-25
 person: Laten we kijken welk abonnement je nu hebt.

@@ -1,4 +1,5 @@
 ---
+layout: aid-compare
 progress-width: w-100
 bg: bg-grey-8
 compare: true

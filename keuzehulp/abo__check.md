@@ -1,4 +1,5 @@
 ---
+layout: aid-question
 progress-width: w-40
 person: Mooi, je hebt al een abonnement!
 question: Laten we kijken of je abonnement nog bij je past

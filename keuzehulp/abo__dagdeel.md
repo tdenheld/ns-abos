@@ -1,4 +1,5 @@
 ---
+layout: aid-question
 progress-width: w-80
 person:  We zijn er bijna. Nog een laatste vraag.
 question: Welk dagdeel reis je voornamelijk met de trein?

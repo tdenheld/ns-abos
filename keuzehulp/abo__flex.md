@@ -1,4 +1,5 @@
 ---
+layout: aid-question
 progress-width: w-50
 person:  Oké helder, laten we nu kijken naar de manier van betalen
 question: Heb je een NS Flex abonnement?

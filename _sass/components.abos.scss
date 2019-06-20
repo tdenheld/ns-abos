@@ -2,9 +2,9 @@
 // ---------------------------------
 .abo-hero {
     position: relative;
-    @extend .gd-r-pale-blue;
+    //@extend .gd-r-pale-blue;
     margin-bottom: $gutter;
-    //background-color: $ns-white;
+    background-color: $ns-white;
     padding: $gutter 0;
 
     @include sm {

@@ -1,0 +1,21 @@
+---
+layout: aid
+---
+
+<section class="pv-4 pv-6-sm a a-fi-right-200px a-dur-900">
+    <div class="container container--narrow">
+        <div class="txt-c mxw-500 mh-auto mb-4 mb-6-sm">
+            <h2 class="f-blue fw-b f24 f32-sm lh-title mb-2">{{ page.subtitle }}</h2>
+            <p>{{ page.description }}</p>
+        </div>
+        <div class="abo-grid">
+            {% for result in page.select %}
+            {% capture i %}{{ result.title }}{% endcapture %}
+            {% assign results=site.data.abos | where: 'title', i %}
+            {% for entry in results %}
+            {% include abo-tile.html %}
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
