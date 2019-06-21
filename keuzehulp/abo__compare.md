@@ -8,45 +8,80 @@ table:
     - col:
         -
         - text: Dal Voordeel
-          class: f16 f18-sm fw-b lh-title
+          class: f16 f18-sm fw-b lh-title txt-c center
         - text: Dal Voordeel Flex
-          class: f16 f18-sm fw-b lh-title
-      border: true 
+          class: f16 f18-sm fw-b lh-title txt-c center
+      class: bo-t va-base
     - col: 
         - text: Betalen
           class: fw-b
         - text: Op saldo
           tooltip: Via de automaat saldo laden
+          class: txt-c center
         - text: Achteraf
           tooltip: Achteraf een factuur
-      border: true
-    - col: 
+          class: txt-c center
+      class: bo-t
+    - col:
         - text: Kosten
-          class: fw-b
+          class: fw-b lh-copy
         - text: € 4,30 / mnd<br>(€ 52,00 / jaar)
+          class: lh-copy txt-c center 
         - text: € 5,00 / mnd
-      border: true
+          class: lh-copy txt-c center
+      class: bo-t
     - col: 
         - text: Kenmerken
           class: fw-b
         - 
         - 
-      border: true
+      class: bo-t
     - col: 
       - text: Maandelijks aanpasbaar
       - icon: x
       - icon: v
     - col: 
-      - text: Maandelijks aanpasbaar
+      - text: Maandelijks opzegbaar
+      - text: Na één jaar
+      - icon: v
+    - col: 
+      - text: Minimun saldo op kaart
+      - text: € 10
+      - text: € 0
+    - col: 
+      - text: Overzicht van alle OV-reizen
+      - text: Alleen treinreizen
+      - icon: v
+    - col: 
+      - text: OV-fiets abonnement inbegrepen
       - icon: x
       - icon: v
     - col: 
-      - text: Maandelijks aanpasbaar
+      - text: Switchen naar 1e klas na inchecken
       - icon: x
       - icon: v
     - col: 
-      - text: Maandelijks aanpasbaar
+      - text: Automatische checkout
+        tooltip: Ben je vergeten uit te checken? Dan corrigeren wij dit automatisch.
       - icon: x
+      - icon: v
+    - col: 
+        - text: Kortingen
+          class: fw-b
+        - 
+        - 
+      class: bo-t
+    - col: 
+      - text: 40% korting buiten de spits
+      - icon: v
+      - icon: v
+    - col: 
+      - text: 40% korting in het weekend
+      - icon: v
+      - icon: v
+    - col: 
+      - text: 40% korting voor 3 medereizigers
+      - icon: v
       - icon: v
       
 button:

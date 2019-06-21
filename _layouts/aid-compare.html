@@ -8,26 +8,31 @@ layout: aid
             <table class="aid-table">
                 <tr>
                     <th></th>
-                    <th>Je hebt</th>
-                    <th>Vergelijk met</th>
+                    <th class="txt-c va-base">Je hebt</th>
+                    <th class="txt-c va-base">Vergelijk met</th>
                 </tr>
                 {% for row in page.table %}
                 <tr>
                     {% for col in row.col %}
-                    <td class="{% if row.border %}bo-t{% endif %}">
+                    <td class="{{ row.class }}">
                         <div class="aid-table__cell {{ col.class }}">
+
+                            {% if col.text %}
                             {{ col.text }}
+                            {% endif %}
+
                             {% if col.tooltip %}
                             <a href="javascript:void(0)" class="toolTip f14" data-controller="generic/ui/ToolTip">
                                 <span class="toolTip--hidden">{{ col.tooltip }}</span>
                             </a>
                             {% endif %}
-                            {% if col.icon=='x' %}
-                                <div class="w-100 center pos-r top-8px svg-red">{% include icons/close-s--small.svg %}</div>
+
+                            {% if col.icon %}
+                                <div class="aid-table__icon">
+                                    <img src="/assets/img/{{ col.icon }}.svg">
+                                </div>
                             {% endif %}
-                            {% if col.icon=='v' %}
-                                <div class="w-100 center pos-r top-8px svg-green-sexy">{% include icons/check-bitfat--small.svg %}</div>
-                            {% endif %}
+                            
                         </div>
                     </td>
                     {% endfor %}
