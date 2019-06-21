@@ -59,7 +59,7 @@ table:
       - icon: x
       - icon: v
     - col: 
-      - text: Automatische checkout
+      - text: Auto checkout
         tooltip: Ben je vergeten uit te checken? Dan corrigeren wij dit automatisch.
         tooltip-class: toolTip--right
       - icon: x

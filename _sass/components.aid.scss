@@ -102,6 +102,7 @@
 
         &:last-child {
             border-right: 1px solid $ns-grey-7;
+            background-color: rgba($ns-light-blue, 0.04);
         }
 
         @include xs {
