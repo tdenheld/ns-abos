@@ -83,7 +83,7 @@
     th,
     td {
         position: relative;
-        width: 33%;
+        width: 32%;
         padding: 7px;
         border-left: 1px solid $ns-grey-7;
         text-align: center;
@@ -92,7 +92,7 @@
         &:first-child {
             padding-left: 0;
             border: none;
-            width: 34%;
+            width: 36%;
             text-align: left;
 
             .aid-table__cell {
@@ -106,6 +106,14 @@
 
         @include xs {
             padding: $half-gutter;
+        }
+    }
+
+    th {
+        border-top: 1px solid $ns-grey-7;
+
+        &:first-child {
+            border: none;
         }
     }
 

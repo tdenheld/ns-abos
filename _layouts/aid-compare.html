@@ -18,11 +18,13 @@ layout: aid
                         <div class="aid-table__cell {{ col.class }}">
 
                             {% if col.text %}
-                            {{ col.text }}
+                            <p>
+                                {{ col.text }}
+                            </p>
                             {% endif %}
 
                             {% if col.tooltip %}
-                            <a href="javascript:void(0)" class="toolTip f14" data-controller="generic/ui/ToolTip">
+                            <a href="javascript:void(0)" class="toolTip f14 txt-l {{ col.tooltip-class }}" data-controller="generic/ui/ToolTip">
                                 <span class="toolTip--hidden">{{ col.tooltip }}</span>
                             </a>
                             {% endif %}

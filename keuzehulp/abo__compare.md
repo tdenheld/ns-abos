@@ -15,20 +15,18 @@ table:
     - col: 
         - text: Betalen
           class: fw-b
-        - text: Op saldo
-          tooltip: Via de automaat saldo laden
-          class: txt-c center
+        - text: "<div class'no-wrap'>Op saldo</div>"
+          tooltip: Via de automaat vooraf saldo laden
         - text: Achteraf
-          tooltip: Achteraf een factuur
-          class: txt-c center
+          tooltip: Betaal achteraf doormiddel van een factuur
       class: bo-t
     - col:
         - text: Kosten
           class: fw-b lh-copy
         - text: € 4,30 / mnd<br>(€ 52,00 / jaar)
-          class: lh-copy txt-c center 
+          class: lh-copy
         - text: € 5,00 / mnd
-          class: lh-copy txt-c center
+          class: lh-copy
       class: bo-t
     - col: 
         - text: Kenmerken
@@ -63,6 +61,7 @@ table:
     - col: 
       - text: Automatische checkout
         tooltip: Ben je vergeten uit te checken? Dan corrigeren wij dit automatisch.
+        tooltip-class: toolTip--right
       - icon: x
       - icon: v
     - col: 

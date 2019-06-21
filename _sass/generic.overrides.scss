@@ -61,3 +61,24 @@ input,
 .checkbox__label:before {
     border-radius: 2px;
 }
+
+.toolTip__container {
+    width: 164px;
+    left: -164px;
+}
+
+.toolTip--right {
+    width: 100%;
+    
+    .toolTip__container {
+        left: 40px;
+
+        &:after {
+            left: -7px;
+        }
+    }
+}
+
+.toolTip__body {
+    padding: 7px 10px;
+}
