@@ -8,9 +8,9 @@ table:
     - col:
         -
         - text: Dal Voordeel
-          class: f16 f18-sm fw-b lh-title txt-c center
+          class: f16 f20-sm fw-b lh-title txt-c center
         - text: Dal Voordeel Flex
-          class: f16 f18-sm fw-b lh-title txt-c center
+          class: f16 f20-sm fw-b lh-title txt-c center
       class: bo-t va-base
     - col: 
         - text: Betalen

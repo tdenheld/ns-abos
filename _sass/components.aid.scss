@@ -80,6 +80,10 @@
         font-size: toRem(14px);
     }
 
+    @include md {
+        font-size: toRem(16px);
+    }
+
     th,
     td {
         position: relative;
