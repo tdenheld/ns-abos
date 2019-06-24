@@ -24,7 +24,7 @@ layout: aid
                             <div class="aid-select__container">
                                 <select class="aid-select">
                                     {% for select in col.select %}
-                                    <option>{{ select }}</option>
+                                    <option value="{{ forloop.index }}">{{ select }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
