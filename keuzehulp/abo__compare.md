@@ -8,10 +8,14 @@ table:
     - col:
         -
         - text: Dal Voordeel
-          class: f16 f20-sm fw-b lh-title txt-c center
-        - text: Dal Voordeel Flex
-          class: f16 f20-sm fw-b lh-title txt-c center
-      class: bo-t va-base
+          class: f16 f20-sm fw-b lh-title
+        - select:
+               - Dal Voordeel Flex
+               - Dal Vrij Flex
+               - Altijd Voordeel Flex
+               - Weekend Voordeel Flex
+          class: f16 f20-sm fw-b lh-title
+      class: bo-t
     - col: 
         - text: Betalen
           class: fw-b
@@ -59,7 +63,7 @@ table:
       - icon: x
       - icon: v
     - col: 
-      - text: Auto checkout
+      - text: Automatische checkuit
         tooltip: Ben je vergeten uit te checken? Dan corrigeren wij dit automatisch.
         tooltip-class: toolTip--right
       - icon: x

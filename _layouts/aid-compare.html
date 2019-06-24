@@ -8,24 +8,35 @@ layout: aid
             <table class="aid-table">
                 <tr>
                     <th></th>
-                    <th class="txt-c va-base">Je hebt</th>
-                    <th class="txt-c va-base">Vergelijk met</th>
+                    <th class="va-base">Je hebt</th>
+                    <th class="va-base">Vergelijk met</th>
                 </tr>
                 {% for row in page.table %}
                 <tr>
                     {% for col in row.col %}
                     <td class="{{ row.class }}">
                         <div class="aid-table__inner-cell {{ col.class }}">
-
                             {% if col.text %}
                             {{ col.text }}
                             {% endif %}
 
+                            {% if col.select %}
+                            <div class="aid-select__container">
+                                <select class="aid-select">
+                                    {% for select in col.select %}
+                                    <option>{{ select }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            {% endif %}
+
                             {% if col.tooltip %}
-                            <a href="javascript:void(0)" class="toolTip f14 txt-l {{ col.tooltip-class }}"
-                                data-controller="generic/ui/ToolTip">
-                                <span class="toolTip--hidden">{{ col.tooltip }}</span>
-                            </a>
+                            <div class="center">
+                                <a href="javascript:void(0)" class="toolTip f14 txt-l {{ col.tooltip-class }}"
+                                    data-controller="generic/ui/ToolTip">
+                                    <span class="toolTip--hidden">{{ col.tooltip }}</span>
+                                </a>
+                            </div>
                             {% endif %}
 
                             {% if col.icon %}
