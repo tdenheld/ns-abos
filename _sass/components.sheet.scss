@@ -1,5 +1,6 @@
-.price-info {
+.sheet {
     position: fixed;
+    width: 100%;
     z-index: 999;
     bottom: 0;
     right: 0;
@@ -8,7 +9,7 @@
     background-color: $ns-blue;
     color: $ns-white;
     border-radius: 8px 8px 0 0;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(100%);
 
     @include sm {
@@ -18,7 +19,7 @@
     }
 }
 
-.price-info__list {
+.sheet__list {
     margin: 0;
     padding: 0;
     list-style-image: none;
@@ -33,7 +34,7 @@
     }
 }
 
-.price-info__close {
+.sheet__close {
     @include center(flex);
     position: absolute;
     top: 0;

@@ -69,10 +69,10 @@ $(function () {
 // show price info
 // ------------------------------------------------------------
 function showPriceInfo() {
-    const $init = $('.js-show-price-info');
-    const obj = '.js-price-info';
-    const $close = $('.js-hide-price-info');
-    let isOpened = sessionStorage.getItem('price-info');
+    const $init = $('.js-show-sheet');
+    const obj = '.js-sheet';
+    const $close = $('.js-hide-sheet');
+    let isOpened = sessionStorage.getItem('sheet');
 
     if ($init[0] && !isOpened) {
         var tl = TweenLite.to(obj, 0.5, {
@@ -96,7 +96,7 @@ function showPriceInfo() {
             });
         };
 
-        sessionStorage.setItem('price-info', true);
+        sessionStorage.setItem('sheet', true);
     };
 };
 showPriceInfo();
