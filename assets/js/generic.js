@@ -77,7 +77,7 @@ function showPriceInfo() {
     if ($init[0] && !isOpened) {
         var tl = TweenLite.to(obj, 0.5, {
             ease: Power4.easeOut,
-            delay: 1.5,
+            delay: 3,
             opacity: 1,
             y: '0%',
             x: '0%',
