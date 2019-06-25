@@ -89,7 +89,7 @@ table:
       
 button:
     primairy:
-        text: Overstappen naar Dal voordeel Flex
+        text: Overstappen naar Dal Voordeel Flex
     secundairy:
         text: Bekijk alle NS-abonnementen
         url: /alle-abonnementen
