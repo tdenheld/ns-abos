@@ -7,59 +7,32 @@ bg: bg-white
     <div class="container container--narrow">
         <header class="mxw-600">
             <h1 class="f32 f48-sm lh-title f-blue mb-4">{{ page.title }}</h1>
-            <p class="f18 f-blue mb-2">
-                Soms wil je wat extra uitleg over je factuur. Zeker als je flex reist, wil deze weleens per maand
-                verschillen. Daarom geven we hier antwoord op dringende vragen en leggen we de meest voorkomende
-                situaties aan je uit.
-            </p>
+            <p class="f18 f-blue mb-2">{{ site.data.invoice.intro }}</p>
         </header>
     </div>
 </section>
 
+{% for section in site.data.invoice.section %}
 <section class="a a-fi a-stag-del mb-8 mb-12-sm">
     <div class="container container--narrow">
         <div class="mxw-800">
-            <h2 class="f24 f30-sm lh-title f-blue mb-3">Voorbeeldfactuur met uitleg</h2>
+            <h2 class="f24 f30-sm lh-title f-blue mb-3">{{ section.title }}</h2>
             <p class="f18 f-blue mb-3">
-                Op de voorbeeldfactuur vind je informatie over alle mogelijke posten die er op een factuur kunnen
-                staan. Jouw eigen factuur heeft er waarschijnlijk minder dan deze.
+                {{ section.description }}
             </p>
-            <a href="#" class="button" target="_blank">Bekijk voorbeeldfactuur (pdf)</a>
-        </div>
-    </div>
-</section>
 
-<section class="a a-fi a-stag-del mb-8 mb-12-sm">
-    <div class="container container--narrow">
-        <div class="mxw-800">
-            <h2 class="f24 f30-sm lh-title f-blue mb-2">Goed om te weten</h2>
-            <p class="f18 f-blue mb-3">
-                Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je abonnementskosten altijd een maand
-                vooruit betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je reiskosten betaal
-                je altijd achteraf. In april betaal je dus voor maart, in mei voor april, en zo verder.
-            </p>
+            {% if section.button %}
+            <a href="{{ section.button.url }}" class="button" target="_blank">{{ section.button.text }}</a>
+            {% endif %}
+            
+            {% if section.adn %}
             <div>
-                {% for entry in site.data.invoice.adn-a %}
+                {% for entry in section.adn %}
                 {% include adn.html %}
                 {% endfor %}
             </div>
+            {% endif %}
         </div>
     </div>
 </section>
-
-<section class="a a-fi a-stag-del mb-8 mb-12-sm">
-    <div class="container container--narrow">
-        <div class="mxw-800">
-            <h2 class="f24 f30-sm lh-title f-blue mb-2">Ziet je factuur er anders uit dan verwacht?</h2>
-            <p class="f18 f-blue mb-3">
-                Als je factuur er anders uitziet dan verwacht, heeft dat vaak een simpele reden. We hebben de
-                mogelijkheden voor je op een rijtje gezet.
-            </p>
-            <div>
-                {% for entry in site.data.invoice.adn-b %}
-                {% include adn.html %}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</section>
+{% endfor %}

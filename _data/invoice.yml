@@ -1,39 +1,55 @@
-adn-a:
-  - title: Wanneer ontvang ik mijn factuur?
-    content: 
-      - De dag van de maand dat je je abonnement afsluit, is ook de dag dat je voortaan je factuur ontvangt. Heb je bijvoorbeeld je NS Flex abonnement op de 18e besteld, dan ontvang je in het vervolg rond de 18e van de maand je factuur.
-      - Zodra je factuur klaar staat, ontvang je een mail met daarin het totaalbedrag, de incassodatum en het rekeningnummer waarvan het bedrag wordt afgeschreven. De factuur kun je dan inzien via Mijn NS.
-  - title: Wanneer betaal ik mijn factuur?
-    content: 
-      - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+intro: Soms wil je wat extra uitleg over je factuur. Zeker als je flex reist, wil deze weleens per maand verschillen. Daarom geven we hier antwoord op dringende vragen en leggen we de meest voorkomende situaties aan je uit.
 
-adn-b:
-  - title: Eerste factuur
-    content: 
-      - Je eerste factuur ziet er altijd anders uit dan de daaropvolgende facturen. Dit heeft te maken met de abonnementskosten die je altijd vooruit betaalt en eventuele administratiekosten bij het aanschaffen van je abonnement. Kijk bij jouw abonnement welke kosten jij zeker op je eerste factuur kunt verwachten.
-      - '<span>NS Flex: Dal Voordeel, Altijd Voordeel, Weekend Vrij, Dal Vrij, Altijd Vrij</span>'
-      - <ul><li>de abonnementskosten voor de komende maand.</li></ul>
-      - '<span>NS Flex: Weekend Voordeel</span>'
-      - <ul><li>de abonnementskosten voor de komende maand</li><li>eenmalige administratiekosten</li></ul>
-      - '<span>NS Flex: Zonder abonnement</span>'
-      - <ul class='mb-0'><li>eenmalige administratiekosten</li></ul>
-  - title: Reiskosten en OV-diensten
-    content: 
-      - <div>Reiskosten</div>Met een NS Flex abonnement betaal je je reiskosten altijd achteraf. Heel handig want dan hoef je geen saldo te laden. Reis je de ene maand meer dan de andere maand, dan kan je factuur hierdoor lager of hoger uitvallen. Om zicht te houden op je maandbedrag is het binnenkort mogelijk om zelf handige alerts in te stellen. Dan krijg je een seintje als je het bedrag bereikt dat jij hebt ingesteld.
-      - <div>Upgraden naar 1e klas</div>Is het wat drukker in de trein? Met NS Flex switch je makkelijk naar 1e klas. Tot wel 15 minuten nadat je hebt ingecheckt. Deze extra kosten vind je terug op je factuur.
-      - <div>Deur-tot-deur diensten</div>Met je NS Flex abonnement kun je gebruik maken van verschillende handige diensten van NS, denk aan de OV-fiets en Stallen op rekening. Ook deze kosten vind je terug op je factuur. Deze kosten kunnen natuurlijk per maand verschillen.
-  - title: Wijziging abonnement
-    content: 
-      - Met NS Flex reis je flexibel en kies je de korting die die maand bij je past. Ook kun je je abonnement tijdelijk stopzetten. Heb jij je abonnement vorige maand gewijzigd? Houd dan bij het checken van je factuur er rekening mee dat deze er daardoor anders ziet.
-  - title: Correctietarieven
-    content:
-      - Vergeten in of uit te checken, kan iedereen gebeuren. In beide gevallen brengen we een correctietarief in rekening. Deze vind je terug op je eerstvolgende factuur.
-      - <div class="mb-1"><a href="https://www.ns.nl/klantenservice/flex/incheck-vergeten.html" target="_blank" class="arrowLink">Vergeten in te checken</a></div><div><a href="https://www.ns.nl/klantenservice/flex/uitcheck-vergeten.html" target="_blank" class="arrowLink">Vergeten uit te checken</a></div>
-  - title: Opzegging abonnement
-    content:
-      - Na opzegging van je abonnement ontvang je nog 1 factuur. Hierop staan de gemaakte reiskosten van de voorgaande maand en eventuele kosten van NS-diensten of correctietarief.
-  - title: Ontbrekende reisgegevens
-    content: 
-      - Het kan voorkomen dat een rit met bus, tram of metro niet op je factuur staat. Of dat de naam van een halte mist. Hoe dat kan? NS heeft zelf geen toegang tot je bus-, tram- en metrogegevens, maar ontvangt deze van Translink. Soms kan dit tot 21 dagen duren. Als je precies in deze periode je factuur ontvangt, verrekenen we de ontbrekende rit op je volgende factuur.
-      - Missende haltegegevens kunnen wij helaas niet voor je aanvullen. We zijn met andere vervoerders in gesprek om deze gegevens zo compleet mogelijk te krijgen.
+
+section:
+  - title: Voorbeeldfactuur met uitleg
+    description: Op de voorbeeldfactuur vind je informatie over alle mogelijke posten die er op een factuur kunnen staan. Jouw eigen factuur heeft er waarschijnlijk minder dan deze.
+    button:
+      text: Bekijk voorbeeldfactuur (pdf)
+      link: '#'
+  
+
+  - title: Goed om te weten
+    description: Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je abonnementskosten altijd een maand vooruit betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je reiskosten betaal je altijd achteraf. In april betaal je dus voor maart, in mei voor april, en zo verder.
+    adn:
+      - title: Wanneer ontvang ik mijn factuur?
+        content: 
+          - De dag van de maand dat je je abonnement afsluit, is ook de dag dat je voortaan je factuur ontvangt. Heb je bijvoorbeeld je NS Flex abonnement op de 18e besteld, dan ontvang je in het vervolg rond de 18e van de maand je factuur.
+          - Zodra je factuur klaar staat, ontvang je een mail met daarin het totaalbedrag, de incassodatum en het rekeningnummer waarvan het bedrag wordt afgeschreven. De factuur kun je dan inzien via Mijn NS.
+      - title: Wanneer betaal ik mijn factuur?
+        content: 
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+
+          
+  - title: Ziet je factuur er anders uit dan verwacht?
+    description: Als je factuur er anders uitziet dan verwacht, heeft dat vaak een simpele reden. We hebben de mogelijkheden voor je op een rijtje gezet.
+    adn:
+      - title: Eerste factuur
+        content: 
+          - Je eerste factuur ziet er altijd anders uit dan de daaropvolgende facturen. Dit heeft te maken met de abonnementskosten die je altijd vooruit betaalt en eventuele administratiekosten bij het aanschaffen van je abonnement. Kijk bij jouw abonnement welke kosten jij zeker op je eerste factuur kunt verwachten.
+          - '<span>NS Flex: Dal Voordeel, Altijd Voordeel, Weekend Vrij, Dal Vrij, Altijd Vrij</span>'
+          - <ul><li>de abonnementskosten voor de komende maand.</li></ul>
+          - '<span>NS Flex: Weekend Voordeel</span>'
+          - <ul><li>de abonnementskosten voor de komende maand</li><li>eenmalige administratiekosten</li></ul>
+          - '<span>NS Flex: Zonder abonnement</span>'
+          - <ul class='mb-0'><li>eenmalige administratiekosten</li></ul>
+      - title: Reiskosten en OV-diensten
+        content: 
+          - <div>Reiskosten</div>Met een NS Flex abonnement betaal je je reiskosten altijd achteraf. Heel handig want dan hoef je geen saldo te laden. Reis je de ene maand meer dan de andere maand, dan kan je factuur hierdoor lager of hoger uitvallen. Om zicht te houden op je maandbedrag is het binnenkort mogelijk om zelf handige alerts in te stellen. Dan krijg je een seintje als je het bedrag bereikt dat jij hebt ingesteld.
+          - <div>Upgraden naar 1e klas</div>Is het wat drukker in de trein? Met NS Flex switch je makkelijk naar 1e klas. Tot wel 15 minuten nadat je hebt ingecheckt. Deze extra kosten vind je terug op je factuur.
+          - <div>Deur-tot-deur diensten</div>Met je NS Flex abonnement kun je gebruik maken van verschillende handige diensten van NS, denk aan de OV-fiets en Stallen op rekening. Ook deze kosten vind je terug op je factuur. Deze kosten kunnen natuurlijk per maand verschillen.
+      - title: Wijziging abonnement
+        content: 
+          - Met NS Flex reis je flexibel en kies je de korting die die maand bij je past. Ook kun je je abonnement tijdelijk stopzetten. Heb jij je abonnement vorige maand gewijzigd? Houd dan bij het checken van je factuur er rekening mee dat deze er daardoor anders ziet.
+      - title: Correctietarieven
+        content:
+          - Vergeten in of uit te checken, kan iedereen gebeuren. In beide gevallen brengen we een correctietarief in rekening. Deze vind je terug op je eerstvolgende factuur.
+          - <div class="mb-1"><a href="https://www.ns.nl/klantenservice/flex/incheck-vergeten.html" target="_blank" class="arrowLink">Vergeten in te checken</a></div><div><a href="https://www.ns.nl/klantenservice/flex/uitcheck-vergeten.html" target="_blank" class="arrowLink">Vergeten uit te checken</a></div>
+      - title: Opzegging abonnement
+        content:
+          - Na opzegging van je abonnement ontvang je nog 1 factuur. Hierop staan de gemaakte reiskosten van de voorgaande maand en eventuele kosten van NS-diensten of correctietarief.
+      - title: Ontbrekende reisgegevens
+        content: 
+          - Het kan voorkomen dat een rit met bus, tram of metro niet op je factuur staat. Of dat de naam van een halte mist. Hoe dat kan? NS heeft zelf geen toegang tot je bus-, tram- en metrogegevens, maar ontvangt deze van Translink. Soms kan dit tot 21 dagen duren. Als je precies in deze periode je factuur ontvangt, verrekenen we de ontbrekende rit op je volgende factuur.
+          - Missende haltegegevens kunnen wij helaas niet voor je aanvullen. We zijn met andere vervoerders in gesprek om deze gegevens zo compleet mogelijk te krijgen.
     
