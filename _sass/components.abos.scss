@@ -7,7 +7,6 @@
 
     @extend .gd-r-pale-blue;
     border-bottom: 1px solid rgba($ns-blue, 0.1);
-    //background-color: $ns-white;
 
     @include sm {
         margin-bottom: $one-half-gutter;
@@ -22,6 +21,14 @@
             background-repeat: no-repeat;
             background-position: 60vw -23%;
         }
+    }
+}
+
+.abo-hero--factuur {
+    &:before {
+        background-image: url('/assets/img/factuur.svg');
+        background-position: 60vw 20%;
+        background-size: contain;
     }
 }
 
