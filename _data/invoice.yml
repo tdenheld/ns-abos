@@ -6,7 +6,7 @@ section:
     description: Op de voorbeeldfactuur vind je informatie over alle mogelijke posten die er op een factuur kunnen staan. Jouw eigen factuur heeft er waarschijnlijk minder dan deze.
     button:
       text: Bekijk voorbeeldfactuur (pdf)
-      link: 'https://www.ns.nl/binaries/_ht_1552590842705/content/assets/ns-nl/overig/ns-flex-factuur-uitleg.pdf'
+      url: 'https://www.ns.nl/binaries/_ht_1552590842705/content/assets/ns-nl/overig/ns-flex-factuur-uitleg.pdf'
   
 
   - title: Goed om te weten
