@@ -6,11 +6,11 @@ section:
     description: Op de voorbeeldfactuur vind je informatie over alle mogelijke posten die er op een factuur kunnen staan. Jouw eigen factuur heeft er waarschijnlijk minder dan deze.
     button:
       text: Bekijk voorbeeldfactuur (pdf)
-      link: '#'
+      link: 'https://www.ns.nl/binaries/_ht_1552590842705/content/assets/ns-nl/overig/ns-flex-factuur-uitleg.pdf'
   
 
   - title: Goed om te weten
-    description: Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je abonnementskosten altijd een maand vooruit betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je reiskosten betaal je altijd achteraf. In april betaal je dus voor maart, in mei voor april, en zo verder.
+    description: Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je <b>abonnementskosten</b> altijd een maand vooruit betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je <b>reiskosten</b> betaal je altijd achteraf. In april betaal je dus voor maart, in mei voor april, en zo verder.
     adn:
       - title: Wanneer ontvang ik mijn factuur?
         content: 
@@ -28,9 +28,9 @@ section:
         content: 
           - Je eerste factuur ziet er altijd anders uit dan de daaropvolgende facturen. Dit heeft te maken met de abonnementskosten die je altijd vooruit betaalt en eventuele administratiekosten bij het aanschaffen van je abonnement. Kijk bij jouw abonnement welke kosten jij zeker op je eerste factuur kunt verwachten.
           - '<span>NS Flex: Dal Voordeel, Altijd Voordeel, Weekend Vrij, Dal Vrij, Altijd Vrij</span>'
-          - <ul><li>de abonnementskosten voor de komende maand.</li></ul>
+          - <ul><li>abonnementskosten voor de komende maand</li></ul>
           - '<span>NS Flex: Weekend Voordeel</span>'
-          - <ul><li>de abonnementskosten voor de komende maand</li><li>eenmalige administratiekosten</li></ul>
+          - <ul><li>abonnementskosten voor de komende maand</li><li>eenmalige administratiekosten</li></ul>
           - '<span>NS Flex: Zonder abonnement</span>'
           - <ul class='mb-0'><li>eenmalige administratiekosten</li></ul>
       - title: Reiskosten en OV-diensten
@@ -43,7 +43,7 @@ section:
           - Met NS Flex reis je flexibel en kies je de korting die die maand bij je past. Ook kun je je abonnement tijdelijk stopzetten. Heb jij je abonnement vorige maand gewijzigd? Houd dan bij het checken van je factuur er rekening mee dat deze er daardoor anders ziet.
       - title: Correctietarieven
         content:
-          - Vergeten in of uit te checken, kan iedereen gebeuren. In beide gevallen brengen we een correctietarief in rekening. Deze vind je terug op je eerstvolgende factuur.
+          - Vergeten in of uit te checken, kan iedereen gebeuren. In beide gevallen brengen we een correctietarief in rekening. Deze vind je terug op je eerstvolgende factuur. Kijk op onderstaande links voor meer informatie.
           - <div class="mb-1"><a href="https://www.ns.nl/klantenservice/flex/incheck-vergeten.html" target="_blank" class="arrowLink">Vergeten in te checken</a></div><div><a href="https://www.ns.nl/klantenservice/flex/uitcheck-vergeten.html" target="_blank" class="arrowLink">Vergeten uit te checken</a></div>
       - title: Opzegging abonnement
         content:
