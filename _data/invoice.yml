@@ -10,7 +10,7 @@ section:
   
 
   - title: Goed om te weten
-    description: Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je <b>abonnementskosten</b> altijd een maand vooruit betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je <b>reiskosten</b> betaal je altijd achteraf. In april betaal je dus voor maart, in mei voor april, en zo verder.
+    description: Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je <b>abonnementskosten</b> altijd een maand <b>vooruit</b> betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je <b>reiskosten</b> betaal je altijd <b>achteraf</b>. In april betaal je dus voor maart, in mei voor april, en zo verder.
     adn:
       - title: Wanneer ontvang ik mijn factuur?
         content: 
