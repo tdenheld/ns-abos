@@ -1,15 +1,22 @@
 ---
 layout: overview
 title: Alle abonnementen
-bg: bg-grey-8
 results:
   - title: Zonder Abonnement
+    url: /dal-voordeel
   - title: Weekend Voordeel
+    url: /dal-voordeel
   - title: Dal Voordeel
+    url: /dal-voordeel
     highlight: Meest gekozen
   - title: Altijd Voordeel
+    url: /dal-voordeel
   - title: Weekend Vrij
+    url: /dal-voordeel
   - title: Dal Vrij
+    url: /dal-voordeel
   - title: Altijd Vrij
+    url: /dal-voordeel
   - title: Traject Vrij
+    url: /dal-voordeel
 ---

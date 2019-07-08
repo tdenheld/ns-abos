@@ -1,0 +1,13 @@
+.tk-heading {
+    margin-bottom: $gutter;
+    @include font(38px, bold, $lh-title);
+    color: $ns-blue;
+
+    @include sm {
+        font-size: toRem(48px);
+    }
+
+    @include md {
+        font-size: toRem(60px);
+    }
+}

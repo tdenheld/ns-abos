@@ -1,8 +1,8 @@
 ---
 layout: aid-results
+bg: bg-grey-8
 progress-width: w-100 br-0
 person: Bedankt voor het antwoorden, ik denk dat deze abonnementen het beste bij jou passen!
-bg: bg-grey-8
 results:
   - title: Altijd Voordeel
     highlight: Meest gekozen

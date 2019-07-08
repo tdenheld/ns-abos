@@ -53,6 +53,11 @@
 
 
 
+// miscellaneous
+// ----------------------------------------------------------------------
+.lst-none { list-style: none; }
+
+
 // rotation
 // ----------------------------------------------------------------------
 .rotate-45  { transform: rotate(45deg); }
@@ -797,6 +802,7 @@
 .f-blue {color: $ns-blue;}
 .f-light-blue {color: $ns-light-blue;}
 .f-green-sexy {color: $ns-green-sexy;}
+.f-green-sexy-2 {color: $ns-green-sexy-2;}
 .f-red {color: $ns-red-alert;}
 .f-grey {color: $ns-grey;}
 .f-grey-2 {color: $ns-grey-2;}
@@ -830,6 +836,7 @@
 .ls-normal { letter-spacing: initial;}
 .ls-3 {letter-spacing: -0.3px}
 .ls-5 {letter-spacing: -0.5px}
+.ls-8 {letter-spacing: -0.8px}
 
 // word wraps
 // ----------------------------------------------------------------------

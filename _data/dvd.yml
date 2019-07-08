@@ -1,0 +1,41 @@
+usps:
+  - 40% korting in het weekend
+  - 40% korting buiten de spits
+  - 40% korting op feestdagen
+button: Bestellen
+price: 5
+costs: Exclusief reiskosten
+description: Binnen 1 uur reizen als je al een OV‑chipkaart hebt of binnen 1 week in huis met een nieuwe OV‑chipkaart
+
+section:
+
+  - title: Korting in de trein
+    description: 'Shoppen in een andere stad? Een dagje strand? Of naar een pretpark? Ga je met de trein; dan heb je die € 5 er zo uit! En je mag 3 vrienden met korting meenemen.'
+
+  - title: Wat is NS Flex?
+    list:
+      - icon: hart--small.svg
+        text: Check zorgeloos in en uit zonder dat je saldo nodig hebt
+      - icon: ov-chipkaart--small.svg
+        text: Vergeet je een keer uit te checken, dan corrigeren we dat automatisch
+      - icon: invoice--small.svg
+        text: Aan het einde van de maand sturen we je 1 overzichtelijke rekening
+    adn:
+      - title: Bestel online
+        content: 
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+      - title: Facturatie met NS Flex
+        content: 
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+      - title: Reiskosten vs abonnementskosten
+        content:
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+      - title: Abonnementen bij andere vervoerders
+        content:
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+      - title: Overstappen
+        content:
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+      - title: Maandelijks aanpasbaar en opzegbaar
+        content:
+          - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.

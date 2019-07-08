@@ -3,6 +3,7 @@
 -------------------*/
 
 .content {
+    background-color: $ns-grey-8;
     margin-top: $navbar-height - 1;
 
     @include md {
@@ -56,6 +57,11 @@ input,
 .inputSpacer__displayContainer,
 .select {
     border-radius: $border-radius;
+}
+
+.button--buy:before {
+    left: auto;
+    margin-left: toRem(-35px);
 }
 
 .checkbox__label:before {
