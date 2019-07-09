@@ -1,20 +1,34 @@
 ---
-#layout: blanco
 title: NS Flex Dal Voordeel
 bg: bg-white
 ---
 
-<section class="abo-hero abo-hero--pdp a a-fi a-stag-del">
+<section class="pt-4 pt-6-sm a a-fi a-stag-del">
     <div class="container container--narrow">
-        <div class="g g-1-m-md gap-4">
-            <header class="mxw-600">
-                <h1 class="tk-heading">{{ page.title }}</h1>
-                <ul class="list-tick">
+        <ul class="breadcrumb mb-0">
+            {% for entry in site.data.dvd.breadcrumbs %}
+            <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="/">
+                    {{ entry | capitalize }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <h1 class="tk-heading">{{ page.title }}</h1>
+    </div>
+</section>
+
+<section class="a a-fi a-stag-del mb-6 mb-8-sm">
+    <div class="container container--narrow">
+        <div class="g g-2-md g-3-2-lg gap-4">
+            <div>
+                <ul class="list-tick list-tick--large">
                     {% for entry in site.data.dvd.usps %}
                     <li class="f-blue">{{ entry }}</li>
                     {% endfor %}
                 </ul>
-            </header>
+            </div>
+
             <div>
                 <div class="abo-cta">
                     <p class="f14 f-grey-4 lh-title">{{ site.data.dvd.costs }}</p>
@@ -24,15 +38,20 @@ bg: bg-white
                         </span> / mnd
                     </p>
                     <a href="#" class="button button--buy w-100 mb-3">{{ site.data.dvd.button }}</a>
-                    <p class="f14 f-green-sexy-2 mxw-300">{{ site.data.dvd.description }}</p>
+                    <p class="f14 f-green-sexy-2">{{ site.data.dvd.description }}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<div class="container container--narrow">
+    <hr class="mb-6 mb-8-sm">
+</div>
+
+
 {% for section in site.data.dvd.section %}
-<section class="a a-fi a-stag-del mb-8 mb-12-sm">
+<section class="a a-fi a-stag-del mb-6 mb-8-sm">
     <div class="container container--narrow">
         <div class="mxw-800">
             <h2 class="f24 f30-sm lh-title f-blue mb-3">
@@ -40,18 +59,15 @@ bg: bg-white
             </h2>
 
             {% if section.description %}
-            <p class="f18 f-blue mb-3">
+            <p class="mb-3">
                 {{ section.description }}
             </p>
             {% endif %}
 
             {% if section.list %}
-            <ul class="list-icon mb-6 mb-8-sm">
+            <ul class="mb-6 mb-8-sm">
                 {% for entry in section.list %}
-                <li>
-                    <div class="center">{% include icons/{{ entry.icon }} %}</div>
-                    <div>{{ entry.text }}</div>
-                </li>
+                <li>{{ entry }}</li>
                 {% endfor %}
             </ul>
             {% endif %}

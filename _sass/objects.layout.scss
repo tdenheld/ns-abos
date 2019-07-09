@@ -6,6 +6,13 @@
     }
 }
 
+.container--small-sm {
+    @include md-max {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}
+
 .center {
     @include center(flex);
 }

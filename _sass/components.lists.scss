@@ -28,6 +28,17 @@
     }
 }
 
+.list-tick--large {
+    li {
+        padding-left: 30px;
+        font-size: toRem(18px);
+
+        &:before {
+            top: 5px;
+        }
+    }
+}
+
 .list-tick--small {
     li {
         margin: 0 0 8px;

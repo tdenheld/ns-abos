@@ -1,25 +1,24 @@
+breadcrumbs:
+  - abonnementen
 usps:
   - 40% korting in het weekend
   - 40% korting buiten de spits
-  - 40% korting op feestdagen
+  - 40% korting voor 3 medereizigers
+  - Gratis persoonlijke OV-chipkaart (kost normaal € 7,50)
 button: Bestellen
 price: 5
 costs: Exclusief reiskosten
-description: Binnen 1 uur reizen als je al een OV‑chipkaart hebt of binnen 1 week in huis met een nieuwe OV‑chipkaart
+description: Binnen 1 uur reizen als je al een OV‑chipkaart hebt of binnen 1 week in huis met een nieuwe OV‑chipkaart.
 
 section:
-
-  - title: Korting in de trein
-    description: 'Shoppen in een andere stad? Een dagje strand? Of naar een pretpark? Ga je met de trein; dan heb je die € 5 er zo uit! En je mag 3 vrienden met korting meenemen.'
+  - title: Wanneer reis je met korting?
+    description: <b>Buiten de spits</b><br>van maandag t/m vrijdag tussen 9.00 en 16.00 en tussen 18.30 en 6.30 uur.<br><br><b>In het weekend</b><br>van vrijdagavond 18.30 uur tot maandagochtend 6.30 uur de hele dag.<br><br><b>Op feestdagen</b><br>de hele dag.<br><br>Het moment van inchecken bepaalt of u wel of niet met korting reist. Checkt u in de daluren in en in de spits uit? Dan reist u met 40% korting. Checkt u in de spits in en in de daluren uit? Dan reist u zonder korting.<br><br>Korting is ook geldig bij andere treinvervoerders en op Nederlandse trajecten van Intercity Berlijn en ICE International. 
 
   - title: Wat is NS Flex?
     list:
-      - icon: hart--small.svg
-        text: Check zorgeloos in en uit zonder dat je saldo nodig hebt
-      - icon: ov-chipkaart--small.svg
-        text: Vergeet je een keer uit te checken, dan corrigeren we dat automatisch
-      - icon: invoice--small.svg
-        text: Aan het einde van de maand sturen we je 1 overzichtelijke rekening
+      - Check zorgeloos in en uit zonder dat je saldo nodig hebt
+      - Vergeet je een keer uit te checken, dan corrigeren we dat automatisch
+      - Aan het einde van de maand sturen we je 1 overzichtelijke rekening
     adn:
       - title: Bestel online
         content: 
