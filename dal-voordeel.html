@@ -3,7 +3,7 @@ title: NS Flex Dal Voordeel
 bg: bg-white
 ---
 
-<section class="pt-4 pt-6-sm a a-fi a-stag-del">
+<section class="pv-4 pv-6-sm a a-fi a-stag-del">
     <div class="container container--narrow">
         <ul class="breadcrumb mb-0">
             {% for entry in site.data.dvd.breadcrumbs %}
@@ -14,7 +14,7 @@ bg: bg-white
             </li>
             {% endfor %}
         </ul>
-        <h1 class="tk-heading">{{ page.title }}</h1>
+        <h1 class="tk-heading mb-0">{{ page.title }}</h1>
     </div>
 </section>
 
@@ -43,10 +43,11 @@ bg: bg-white
     </div>
 </section>
 
-<div class="container container--narrow">
-    <hr class="mb-6 mb-8-sm">
-</div>
-
+<section class="a a-fi a-stag-del">
+    <div class="container container--narrow">
+        <hr class="mb-6 mb-8-sm">
+    </div>
+</section>
 
 {% for section in site.data.dvd.section %}
 <section class="a a-fi a-stag-del mb-6 mb-8-sm">

@@ -11,9 +11,6 @@ costs: Exclusief reiskosten
 description: Binnen 1 uur reizen als je al een OV‑chipkaart hebt of binnen 1 week in huis met een nieuwe OV‑chipkaart.
 
 section:
-  - title: Wanneer reis je met korting?
-    description: <b>Buiten de spits</b><br>van maandag t/m vrijdag tussen 9.00 en 16.00 en tussen 18.30 en 6.30 uur.<br><br><b>In het weekend</b><br>van vrijdagavond 18.30 uur tot maandagochtend 6.30 uur de hele dag.<br><br><b>Op feestdagen</b><br>de hele dag.<br><br>Het moment van inchecken bepaalt of u wel of niet met korting reist. Checkt u in de daluren in en in de spits uit? Dan reist u met 40% korting. Checkt u in de spits in en in de daluren uit? Dan reist u zonder korting.<br><br>Korting is ook geldig bij andere treinvervoerders en op Nederlandse trajecten van Intercity Berlijn en ICE International. 
-
   - title: Wat is NS Flex?
     list:
       - Check zorgeloos in en uit zonder dat je saldo nodig hebt
@@ -38,3 +35,5 @@ section:
       - title: Maandelijks aanpasbaar en opzegbaar
         content:
           - Wij streven ernaar het bedrag binnen 5 dagen nadat je je factuur-e-mail hebt ontvangen, af te schrijven. Het is helaas niet mogelijk om de incassodatum aan te passen. Staat op je factuur dat je geld terugkrijgt van NS, dan ontvang je dat ook enkele dagen later op je rekening.
+  - title: Wanneer reis je met korting?
+    description: <b>Buiten de spits</b><br>van maandag t/m vrijdag tussen 9.00 en 16.00 en tussen 18.30 en 6.30 uur.<br><br><b>In het weekend</b><br>van vrijdagavond 18.30 uur tot maandagochtend 6.30 uur de hele dag.<br><br><b>Op feestdagen</b><br>de hele dag.<br><br>Het moment van inchecken bepaalt of u wel of niet met korting reist. Checkt u in de daluren in en in de spits uit? Dan reist u met 40% korting. Checkt u in de spits in en in de daluren uit? Dan reist u zonder korting.<br><br>Korting is ook geldig bij andere treinvervoerders en op Nederlandse trajecten van Intercity Berlijn en ICE International. 
