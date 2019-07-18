@@ -103,22 +103,17 @@ bg: bg-white
                 {% capture i %}{{ result.title }}{% endcapture %}
                 {% assign results=site.data.abos | where: 'title', i %}
 
-                {% for entry in results %}                                 
-                    <p class="mb-2">
-                        {{ result.description }}
-                    </p>                        
-                {% endfor %}
-
                 {% for entry in results %}
                 <div>
                     {% if result.description %}
-                    <p class="mb-2">
+                    <p class="f14 mb-1">
                         {{ result.description }}
                     </p>
                     {% endif %}
                     {% include abo-tile.html %}
                 </div>
                 {% endfor %}
+
             {% endfor %}
         </div>
     </div>
