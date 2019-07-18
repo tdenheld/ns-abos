@@ -22,9 +22,10 @@ bg: bg-white
     <div class="container container--narrow">
         <div class="g g-2-md g-3-2-lg gap-4">
             <div>
+                <h2 class="headingM fw-normal mb-4">{{ site.data.dvd.payoff }}</h2>
                 <ul class="list-tick list-tick--large">
                     {% for entry in site.data.dvd.usps %}
-                    <li class="f-blue">{{ entry }}</li>
+                    <li>{{ entry }}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -36,10 +37,10 @@ bg: bg-white
                         <span class="fw-b f32 f40-sm lh-title">€ {{ site.data.dvd.price }}</span> / mnd
                     </p>
                     <a href="#" class="button button--buy w-100 mb-3">{{ site.data.dvd.button }}</a>
-                    <p class="f14 f-green-sexy-2 mb-2">{{ site.data.dvd.description }}</p>
+                    <p class="f14 f-green-sexy-2 mb-2">{{ site.data.dvd.persuasion }}</p>
                     <hr>
                     {% include safe-pay.html %}
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -60,17 +61,20 @@ bg: bg-white
             </h2>
 
             {% if section.description %}
-            <p class="mb-3">
+            <p class="f18 f-blue mb-3">
                 {{ section.description }}
             </p>
             {% endif %}
 
             {% if section.list %}
-            <ul class="mb-6 mb-8-sm">
-                {% for entry in section.list %}
-                <li>{{ entry }}</li>
-                {% endfor %}
-            </ul>
+            <div class="js-readmore">
+                <ul class="mb-3">
+                    {% for entry in section.list %}
+                    <li class="fw-bb js-readmore-li">{{ entry }}</li>
+                    {% endfor %}
+                </ul>
+                <button class="button btn-ghost is-hidden js-readmore-btn">＋ Lees meer</button>
+            </div>
             {% endif %}
 
             {% if section.button %}

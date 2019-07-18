@@ -103,6 +103,31 @@ showPriceInfo();
 
 
 
+/* readmore click to hide additional info
+to reduce cognitive load */
+// ------------------------------------------------------------
+function readMore() {
+    const obj = $('.js-readmore');
+
+    if (obj[0]) {
+        obj.each(function () {
+            const btn = $('.js-readmore-btn', this);
+            const li = $('.js-readmore-li', this);
+
+            btn.show();
+            $(li).slice(3).hide();
+
+            btn.click(() => {
+                $(li).slice(3).slideDown(200);
+                btn.hide(100);
+            });
+        });
+    };
+};
+readMore();
+
+
+
 // preloader
 // ------------------------------------------------------------	
 function loader() {

@@ -119,6 +119,9 @@
     color: $ns-light-blue;
     transition: $fade-link;
 
+    &:active:hover,
+    &:focus:hover,
+    &:visited,:hover
     &:hover {
         border: 1px solid $ns-blue;
         box-shadow: none;
@@ -135,6 +138,7 @@
         background: transparent;
         box-shadow: none;
         outline: none;
+        color: $ns-light-blue;
     }
 
     svg {

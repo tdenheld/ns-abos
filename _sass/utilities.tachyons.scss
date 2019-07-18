@@ -819,6 +819,7 @@
 // ----------------------------------------------------------------------
 .fw-normal {font-weight: normal;}
 .fw-b {font-weight: bold;}
+.fw-bb b {color: $ns-blue;}
 @for $i from 1 through 9 {
 	$weight: $i * 100;
 	.fw-#{$weight} {
