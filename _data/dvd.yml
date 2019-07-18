@@ -28,9 +28,12 @@ section:
       - title: Wanneer reis je met korting?
         content: 
           - Met NS Flex Dal Voordeel reis je op de volgende tijden met 40% korting op je treinreizen (met uitzondering van Thalys en Eurostar).
-          - <h4>Buiten de spits (daluren)</h4>Maandag t/m vrijdag van 09:00 tot 16:00 en van 18:30 tot 06:30 uur.
-          - <h4>Weekend</h4>Van vrijdagavond 18:30 tot maandagochtend 6:30 uur.
-          - <h4>Feestdagen</h4>Van 00:00 tot 00:00 uur.
+          - <h4>Buiten de spits (daluren)</h4>
+          - Maandag t/m vrijdag van 09:00 tot 16:00 en van 18:30 tot 06:30 uur.
+          - <h4>Weekend</h4>
+          - Van vrijdagavond 18:30 tot maandagochtend 6:30 uur.
+          - <h4>Feestdagen</h4>
+          - Van 00:00 tot 00:00 uur.
       - title: Bestel online
         content: 
           - Je NS Flex abonnement bestel je heel eenvoudig online in onze <a href="https://www.ns.nl/nsflex/webshop#/bestelling/producten" target="_blank" class="unlink tk-link">webshop</a>. Heb je hulp nodig bij het kiezen van het juiste abonnement? Doe dan de <a href="https://www.ns.nl/ns-abonnementen/keuzehulp" target="_blank" class="unlink tk-link">keuzehulp</a>.
@@ -45,7 +48,8 @@ section:
       - title: Overstappen naar NS Flex?
         content:
           - Heb je al een NS-abonnement maar wil je graag overstappen naar een NS Flex Dal Voordeel? Dat kan! Je kunt elk moment overstappen naar NS Flex. Ook als je een jaarabonnement hebt.
-          - <h4>Zo werkt het</h4> Log in op <a href="https://login.ns.nl" target="_blank" class="unlink tk-link">Mijn NS</a> en pas je abonnement aan bij Mijn producten. Wij beëindigen automatisch je huidige abonnement en je vooruit betaalde abonnementskosten storten we terug. Als er nog saldo op je kaart staat, verrekenen we dit automatisch op je NS Flex factuur. Bij een nieuwe kaart is dit helaas niet mogelijk maar we kunnen het wel <a href="https://www.ns.nl/klantenservice/geld-terug/saldo-terugstorten-of-overzetten.html" target="_blank" class="unlink tk-link">terugstorten</a>. Haal NS Flex op bij de kaartautomaat. Dat is de allerlaatste keer dat je de automaat nodig hebt.
+          - <h4>Zo werkt het</h4> 
+          - Log in op <a href="https://login.ns.nl" target="_blank" class="unlink tk-link">Mijn NS</a> en pas je abonnement aan bij Mijn producten. Wij beëindigen automatisch je huidige abonnement en je vooruit betaalde abonnementskosten storten we terug. Als er nog saldo op je kaart staat, verrekenen we dit automatisch op je NS Flex factuur. Bij een nieuwe kaart is dit helaas niet mogelijk maar we kunnen het wel <a href="https://www.ns.nl/klantenservice/geld-terug/saldo-terugstorten-of-overzetten.html" target="_blank" class="unlink tk-link">terugstorten</a>. Haal NS Flex op bij de kaartautomaat. Dat is de allerlaatste keer dat je de automaat nodig hebt.
       - title: Altijd inzicht in je kosten
         content:
           - Met NS Flex hoef je geen saldo meer op je OV-chipkaart te laden maar betaal je je reizen achteraf via een maandelijkse factuur. Dit scheelt stress vooraf aan je treinreis. Om gedurende de maand inzicht te houden in de kosten die je maakt, zijn deze online inzichtelijk via Mijn NS en de NS-app. 
