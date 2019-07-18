@@ -121,7 +121,7 @@
 
     &:active:hover,
     &:focus:hover,
-    &:visited,:hover
+    &:visited:hover,
     &:hover {
         border: 1px solid $ns-blue;
         box-shadow: none;
