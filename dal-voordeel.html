@@ -36,8 +36,10 @@ bg: bg-white
                         <span class="fw-b f32 f40-sm lh-title">€ {{ site.data.dvd.price }}</span> / mnd
                     </p>
                     <a href="#" class="button button--buy w-100 mb-3">{{ site.data.dvd.button }}</a>
-                    <p class="f14 f-green-sexy-2">{{ site.data.dvd.description }}</p>
-                </div>
+                    <p class="f14 f-green-sexy-2 mb-2">{{ site.data.dvd.description }}</p>
+                    <hr>
+                    {% include safe-pay.html %}
+                </div>                
             </div>
         </div>
     </div>
