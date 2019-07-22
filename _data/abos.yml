@@ -1,12 +1,13 @@
 - title: Zonder Abonnement
   details:
-  - Reizen voor de volle mep
+  - Flexibel reizen zonder korting
   price: 0
   period: mnd
 
 - title: Weekend Voordeel
   details:
   - 40% korting in het weekend
+  - 40% korting op feestdagen
   price: 2
   period: mnd
 
@@ -14,6 +15,7 @@
   details:
   - 40% korting in het weekend
   - 40% korting buiten de spits
+  - 40% korting op feestdagen
   price: 5
   period: mnd
 
@@ -21,6 +23,7 @@
   details:
   - 40% korting in het weekend
   - 40% korting buiten de spits
+  - 40% korting op feestdagen
   - 20% korting in de spits
   price: 24
   period: mnd
@@ -28,6 +31,7 @@
 - title: Weekend Vrij
   details:
   - Onbeperkt reizen in het weekend
+  - Onbeperkt reizen op feestdagen
   price: 32
   period: mnd
 
@@ -35,6 +39,7 @@
   details:
   - Onbeperkt reizen in het weekend
   - Onbeperkt reizen buiten de spits
+  - Onbeperkt reizen op feestdagen
   price: 106
   period: mnd
 
@@ -42,6 +47,7 @@
   details:
   - Onbeperkt reizen in het weekend
   - Onbeperkt reizen buiten de spits
+  - Onbeperkt reizen op feestdagen
   - Onbeperkt reizen in de spits
   price: 347
   period: mnd
@@ -50,11 +56,13 @@
   details:
   - Onbeperkt reizen op een vast traject
   - 40% korting op andere trajecten
+  - 40% korting op feestdagen
   price-message: Prijs trajectafhankelijk
 
 - title: Voordeeluren&shy;abonnement
   details:
   - 40% korting na 09.00
-  - 40% korting  in het weekend
+  - 40% korting in het weekend
+  - 40% korting op feestdagen
   price: 67
   period: jaar

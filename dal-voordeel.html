@@ -8,7 +8,7 @@ bg: bg-white
         <ul class="breadcrumb mb-0">
             {% for entry in site.data.dvd.breadcrumbs %}
             <li class="breadcrumb__item">
-                <a class="breadcrumb__link" href="/">
+                <a class="breadcrumb__link" href="/alle-abonnementen">
                     {{ entry | capitalize }}
                 </a>
             </li>
@@ -32,10 +32,10 @@ bg: bg-white
 
             <div>
                 <div class="abo-cta">
-                    <p class="f14 f-grey-4 lh-title">{{ site.data.dvd.costs }}</p>
-                    <p class="f14 f-blue mb-2">
+                    <p class="f14 f-blue">
                         <span class="fw-b f32 f40-sm lh-title">€ {{ site.data.dvd.price }}</span> / mnd
                     </p>
+                    <p class="f14 f-grey-4 lh-title mb-3">{{ site.data.dvd.costs }}</p>
                     <a href="#" class="button button--buy w-100 mb-3">{{ site.data.dvd.button }}</a>
                     <p class="f14 f-green-sexy-2 mb-2">{{ site.data.dvd.persuasion }}</p>
                     <hr>

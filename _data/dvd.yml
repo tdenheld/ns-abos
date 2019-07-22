@@ -4,8 +4,8 @@ payoff: Met een retourtje per maand heb je NS Flex Dal Voordeel al terugverdiend
 usps:
   - 40% korting in het weekend
   - 40% korting buiten de spits
-  #- 40% korting voor 3 medereizigers
-  #- Gratis persoonlijke OV-chipkaart (kost normaal € 7,50)
+  - 40% korting op feestdagen
+  - 40% korting voor 3 medereizigers
 button: Bestellen
 price: 5
 costs: Exclusief reiskosten
