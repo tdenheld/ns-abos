@@ -6,14 +6,14 @@
 
 - title: Weekend Voordeel
   details:
-  - 40% korting in het weekend
+  - 40% korting in het weekend en op feestdagen
   - 40% korting op feestdagen
   price: 2
   period: mnd
 
 - title: Dal Voordeel
   details:
-  - 40% korting in het weekend
+  - 40% korting in het weekend en op feestdagen
   - 40% korting buiten de spits
   - 40% korting op feestdagen
   price: 5
