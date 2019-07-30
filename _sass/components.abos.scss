@@ -69,6 +69,17 @@
     }
 }
 
+.abo-tile--hightlight {
+    @include m-max {
+        margin-top: 4px;
+    }
+}
+
+.abo-tile__grid {
+    display: flex;
+    justify-content: space-between;
+}
+
 .abo-tile__heading {
     @include font(18px, bold, $lh-title);
     color: $ns-blue;
@@ -86,25 +97,19 @@
     text-align: right;
 }
 
-.abo-tile__period {
-    position: relative;
+.abo-tile__description {
     @include font(14px, normal, $lh-title);
     color: $ns-blue;
+}
 
+.abo-tile__description--message {
+    margin-left: 7px;
+}
+
+.abo-tile__description--period {
     @media (min-width: 374px) {
         display: block;
     }
-}
-
-.abo-tile--hightlight {
-    @include m-max {
-        margin-top: 4px;
-    }
-}
-
-.abo-tile__grid {
-    display: flex;
-    justify-content: space-between;
 }
 
 .abo-tile__highlight {

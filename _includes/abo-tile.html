@@ -8,12 +8,12 @@
     <div class="abo-tile__grid">
         <h2 class="abo-tile__heading">{{ entry.title }}</h2>
         {% if entry.price-message %}
-        <p class="f14 f-blue txt-r ml-2">{{ entry.price-message }}</p>
+        <p class="abo-tile__description abo-tile__description--message">{{ entry.price-message }}</p>
         {% else %}
         <div class="abo-tile__price">
             <h3 class="abo-tile__heading">
                 € {{ entry.price }}
-                <span class="abo-tile__period">
+                <span class="abo-tile__description abo-tile__description--period">
                     / {{ entry.period }}
                 </span>
             </h3>
