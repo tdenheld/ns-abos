@@ -1,28 +1,28 @@
-<a href="{{ result.url }}" class="unlink abo-tile {% if result.highlight %}abo-tile--hightlight{% endif %} a a-fi a-stag">
+<a href="{{ result.url }}"
+    class="unlink abo-tile {% if result.highlight %}abo-tile--hightlight{% endif %} a a-fi a-stag">
     {% if result.highlight %}
     <div class="abo-tile__highlight">
         {{ result.highlight }}
     </div>
     {% endif %}
-    <div class="{% unless entry.price-message %}abo-tile__grid{% endunless %}">
-        <div>
-            <div class="abo-tile__grid">
-                <h2 class="f-blue f18 f20-sm lh-title mb-1">{{ entry.title }}</h2>
-                {% if entry.price-message %}
-                <p class="f14 f-blue txt-r ml-2">{{ entry.price-message }}</p>
-                {% endif %}
-            </div>
-            <ul class="abo-tile__details list-tick list-tick--small">
-                {% for detail in entry.details %}
-                <li>{{ detail }}</li>
-                {% endfor %}
-            </ul>
+    <div class="abo-tile__grid">
+        <h2 class="abo-tile__title">{{ entry.title }}</h2>
+        {% if entry.price-message %}
+        <p class="f14 f-blue txt-r ml-2">{{ entry.price-message }}</p>
+        {% else %}
+        <div class="abo-tile__price">
+            <h3 class="abo-tile__title abo-title--price">
+                € {{ entry.price }}
+                <span class="abo-tile__period">
+                    / {{ entry.period }}
+                </span>
+            </h3>
         </div>
-        {% unless entry.price-message %}
-        <div class="txt-r no-wrap ml-2">
-            <h3 class="f-blue fw-b f18 f20-sm lh-title">€ {{ entry.price }}</h3>
-            <p class="f14 f-blue">/ {{ entry.period }}</p>
-        </div>
-        {% endunless %}
+        {% endif %}
     </div>
+    <ul class="list-tick list-tick--small">
+        {% for detail in entry.details %}
+        <li>{{ detail }}</li>
+        {% endfor %}
+    </ul>
 </a>
