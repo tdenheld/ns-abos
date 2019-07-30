@@ -69,7 +69,7 @@
     }
 }
 
-.abo-tile__title {
+.abo-tile__heading {
     @include font(18px, bold, $lh-title);
     color: $ns-blue;
     margin-bottom: 10px;
@@ -77,10 +77,6 @@
     @include sm {
         font-size: toRem(20px);
     }
-}
-
-.abo-tile__title--price {
-    margin: 0;
 }
 
 .abo-tile__price {

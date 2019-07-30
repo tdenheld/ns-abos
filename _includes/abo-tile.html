@@ -6,12 +6,12 @@
     </div>
     {% endif %}
     <div class="abo-tile__grid">
-        <h2 class="abo-tile__title">{{ entry.title }}</h2>
+        <h2 class="abo-tile__heading">{{ entry.title }}</h2>
         {% if entry.price-message %}
         <p class="f14 f-blue txt-r ml-2">{{ entry.price-message }}</p>
         {% else %}
         <div class="abo-tile__price">
-            <h3 class="abo-tile__title abo-title--price">
+            <h3 class="abo-tile__heading">
                 € {{ entry.price }}
                 <span class="abo-tile__period">
                     / {{ entry.period }}
