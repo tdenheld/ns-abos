@@ -45,10 +45,12 @@
 }
 
 .adn__icon {
-    position: relative;
-    top: 3px;
+    line-height: 0;
+    flex-shrink: 0;
+    flex-basis: 19px;
 
     svg {
+        line-height: 0;
         fill: $ns-light-blue;
         transition: $fade-link;
     }
