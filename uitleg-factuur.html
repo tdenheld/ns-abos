@@ -7,6 +7,15 @@ bg: bg-white
 <section class="abo-hero abo-hero--factuur mb-6 mb-12-sm a a-fi a-stag-del">
     <div class="container container--narrow">
         <header class="mxw-600">
+            <ul class="breadcrumb mb-0">
+                {% for entry in site.data.invoice.breadcrumbs %}
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="#">
+                        {{ entry | capitalize }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
             <h1 class="tk-heading">{{ page.title }}</h1>
             <p class="f18 f-blue mb-2">
                 {{ site.data.invoice.intro }}
@@ -27,7 +36,7 @@ bg: bg-white
             {% if section.button %}
             <a href="{{ section.button.url }}" class="button" target="_blank">{{ section.button.text }}</a>
             {% endif %}
-            
+
             {% if section.adn %}
             <div>
                 {% for entry in section.adn %}
