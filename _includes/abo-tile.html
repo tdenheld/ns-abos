@@ -1,5 +1,5 @@
 <a href="{{ result.url }}"
-    class="unlink abo-tile {% if result.highlight %}abo-tile--hightlight{% endif %} a a-fi a-stag">
+    class="unlink abo-tile {{ include.mod }} {% if result.highlight %}abo-tile--hightlight{% endif %} a a-fi a-stag">
     {% if result.highlight %}
     <div class="abo-tile__highlight">
         {{ result.highlight }}

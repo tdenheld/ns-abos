@@ -3,8 +3,8 @@ layout: aid-select
 bg: bg-grey-8
 progress-width: w-25
 person: Laten we kijken welk abonnement je nu hebt.
-subtitle: Selecteer je huidige abonnement
-description: Ben je de naam van je abonnement vergeten? <a class="unlink tk-link">Log in</a> en haal je gegevens op.
+subtitle: Selecteer je huidige abonnement om door te gaan
+description: Ben je de naam van je abonnement vergeten? Log in en haal je gegevens op.
 select:
     - title: Dal Voordeel
       url: /keuzehulp/abo__flex
