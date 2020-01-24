@@ -4,29 +4,49 @@ layout: aid
 
 <section class="pv-4 pv-6-sm a a-fi-right-200px a-dur-900">
     <div class="container container--narrow">
-        <div class="txt-c mxw-500 mh-auto mb-4 mb-6-sm">
-            <h2 class="f-blue fw-b f24 f32-sm lh-title mb-2">{{ page.subtitle }}</h2>
+        <div class="txt-c mxw-500 mh-auto mb-6 mb-8-sm">
+            <h2 class="f-blue fw-b f24 f32-sm lh-title">{{ page.subtitle }}</h2>
         </div>
-        <div class="g g-2-sm gap-3 mxw-800 mh-auto mb-4 mb-6-sm">
-            {% for result in page.select %}
-            {% capture i %}{{ result.title }}{% endcapture %}
-            {% assign results=site.data.abos | where: 'title', i %}
-            {% for entry in results %}
-            {% include abo-tile-select.html %}
-            {% endfor %}
-            {% endfor %}
+        <div class="mxw-800 mh-auto mb-4 mb-6-sm">
+            <div class="g g-2-sm col-gap-3 col-gap-8-md row-gap-8">
+                <div>
+                    <h3 class="f20 f24-sm f-blue txt-c mb-1">Flex abonnementen</h3>
+                    <div class="bo-b-blue mb-4"></div>
+                    <div class="g gap-3">
+                        {% for result in page.select-flex %}
+                        {% capture i %}{{ result.title }}{% endcapture %}
+                        {% assign results=site.data.abos | where: 'title', i %}
+
+                        {% for entry in results %}
+                        {% include abo-tile-select.html type='Flex' %}
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="f20 f24-sm f-blue txt-c mb-1">Klassieke abonnementen</h3>
+                    <div class="bo-b-blue mb-4"></div>
+                    <div class="g gap-3">
+                        {% for result in page.select-ros %}
+                        {% capture i %}{{ result.title }}{% endcapture %}
+                        {% assign results=site.data.abos | where: 'title', i %}
+
+                        {% for entry in results %}
+                        {% include abo-tile-select.html %}
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bo-b-blue mb-4 pb-4"></div>
+
         </div>
-        <div class="txt-c mxw-500 mh-auto a a-fi a-del-500">
-            <p class="f18 mb-3">{{ page.description }}</p>
+        <div class="txt-c mxw-500 mh-auto a a-fi a-del-500 pb-4">
+            <p class="f18 f20-sm f-blue mb-3">{{ page.description }}</p>
             <a class="button">Naar inloggen</a>
         </div>
-    </div>
-</section>
-
-<section class="pb-6 pb-8-sm txt-c a a-fi a-del-350">
-    <div class="container container--narrow">
-        <div class="bo-b-a15 mb-3 mb-5-sm"></div>
-        <h2 class="f-blue fw-b f24 f32-sm lh-title mb-2">Heb je al NS Flex een abonnement?</h2>
-        <p class="mb-3">Dan kun je iedere maand eenvoudig je <a href="" class="unlink tk-link">abonnement wijzigen</a>.</p>
     </div>
 </section>
