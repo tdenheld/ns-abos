@@ -36,7 +36,7 @@
   details:
   - Onbeperkt reizen in het weekend
   - Onbeperkt reizen buiten de spits
-  price: 106
+  price: 105
   period: mnd
 
 - title: Altijd Vrij
@@ -44,7 +44,7 @@
   - Onbeperkt reizen in het weekend
   - Onbeperkt reizen buiten de spits
   - Onbeperkt reizen in de spits
-  price: 347
+  price: 351
   period: mnd
 
 - title: Traject Vrij

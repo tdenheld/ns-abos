@@ -1,11 +1,9 @@
-breadcrumbs:
-  - abonnementen
-payoff: Met een retourtje per maand heb je NS Flex Dal Voordeel meestal al terugverdiend.
+payoff: Met 1 retour per maand heb je een Dal Voordeel abonnement meestal al terugverdiend.
 usps:
   - 40% korting in het weekend
   - 40% korting buiten de spits
   - 40% korting op feestdagen
-  - 40% korting voor 3 medereizigers
+  - 40% korting voor 3 medereizigers buiten de spits
 price: 5
 
 section:
@@ -63,7 +61,9 @@ section:
 more:
   title: Ook interessant voor jou?
 tiles:
-  - title: Traject Vrij
-    description: Als je vaak via een <b>vaste treinroute</b> reist
+  - title: Dal Vrij
+    url: /dal-voordeel
+  - title: Altijd Voordeel
+    url: /dal-voordeel
   - title: Altijd Vrij
-    description: Als je veel in de <b>spits</b> reist
+    url: /dal-voordeel
