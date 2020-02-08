@@ -6,7 +6,12 @@
     </div>
     {% endif %}
     <div class="abo-tile__grid">
-        <h2 class="abo-tile__heading">{{ entry.title }}</h2>
+        <h2 class="abo-tile__heading abo-tile__heading--underline">
+            {{ entry.title }}
+            <span class="hidden-xs hidden-sm">
+                {% include icons/chevron-m--small.svg %}
+            </span>
+        </h2>
         {% if entry.price-message %}
         <p class="abo-tile__description abo-tile__description--message">{{ entry.price-message }}</p>
         {% else %}
