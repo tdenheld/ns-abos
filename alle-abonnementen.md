@@ -1,6 +1,6 @@
 ---
 layout: overview
-title: Alle NS Flex abonnementen
+title: NS abonnementen
 results:
   - title: Basis
     url: /dal-voordeel
@@ -16,5 +16,7 @@ results:
   - title: Dal Vrij
     url: /dal-voordeel
   - title: Altijd Vrij
+    url: /dal-voordeel
+  - title: Traject Vrij
     url: /dal-voordeel
 ---
