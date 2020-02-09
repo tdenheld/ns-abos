@@ -14,7 +14,7 @@ section:
 
   - title: Goed om te weten
     description: Maandelijks ontvang je 1 factuur. Houd er rekening mee dat je je <b>abonnementskosten</b> altijd een maand <b>vooruit</b> betaalt. In april betaal je dus voor mei, in mei voor juni, en zo verder. Je <b>reiskosten</b> betaal je altijd <b>achteraf</b>. In april betaal je dus voor maart, in mei voor april, en zo verder.
-    adn:
+    collapsible:
       - title: Wanneer ontvang ik mijn factuur?
         content: 
           - De dag van de maand dat je je abonnement afsluit, is ook de dag dat je voortaan je factuur ontvangt. Heb je bijvoorbeeld je NS Flex abonnement op de 18e besteld, dan ontvang je in het vervolg rond de 18e van de maand je factuur.
@@ -26,7 +26,7 @@ section:
           
   - title: Ziet je factuur er anders uit dan verwacht?
     description: Als je factuur er anders uitziet dan verwacht, heeft dat vaak een simpele reden. We hebben de mogelijkheden voor je op een rijtje gezet.
-    adn:
+    collapsible:
       - title: Eerste factuur
         content: 
           - Je eerste factuur ziet er altijd anders uit dan de daaropvolgende facturen. Dit heeft te maken met de abonnementskosten die je altijd vooruit betaalt en eventuele administratiekosten bij het aanschaffen van je abonnement. Kijk bij jouw abonnement welke kosten jij zeker op je eerste factuur kunt verwachten.

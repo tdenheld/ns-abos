@@ -30,7 +30,7 @@ bg: bg-white
                         <span class="fw-b f32 f40-sm lh-title">€ {{ site.data.dvd.price }}</span> / mnd
                     </p>
                     <p class="f14 f-grey-4 lh-title mb-3">Exclusief reiskosten</p>
-                    <a href="#" class="button button--buy w-100 mb-3">Bestellen</a>
+                    <a href="#" class="button button--buy button--brand w-100 mb-3">Bestellen</a>
                     <p class="f14 f-green-sexy-2 mb-2">
                         Reis binnen 1 uur flex met je huidige OV-chipkaart of ontvang binnen 1 week een nieuwe kaart.
                     </p>
@@ -79,10 +79,10 @@ bg: bg-white
             </a>
             {% endif %}
 
-            {% if section.adn %}
+            {% if section.collapsible %}
             <div>
-                {% for entry in section.adn %}
-                {% include adn.html %}
+                {% for entry in section.collapsible %}
+                {% include collapsible.html %}
                 {% endfor %}
             </div>
             {% endif %}

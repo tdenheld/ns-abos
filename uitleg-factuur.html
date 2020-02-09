@@ -37,10 +37,10 @@ bg: bg-white
             <a href="{{ section.button.url }}" class="button" target="_blank">{{ section.button.text }}</a>
             {% endif %}
 
-            {% if section.adn %}
+            {% if section.collapsible %}
             <div>
-                {% for entry in section.adn %}
-                {% include adn.html %}
+                {% for entry in section.collapsible %}
+                {% include collapsible.html %}
                 {% endfor %}
             </div>
             {% endif %}

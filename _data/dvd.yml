@@ -18,7 +18,7 @@ section:
       - Ook gebruik van te maken <b>zonder abonnement</b>
 
   - title: Precies weten hoe het werkt?
-    adn:
+    collapsible:
       - title: Op deze tijden reis je met korting
         content: 
           - <p>Met NS Flex Dal Voordeel reis je tijdens onderstaande daluren met 40% korting op je treinreizen.</p>
