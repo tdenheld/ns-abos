@@ -12,7 +12,7 @@ layout: aid
             <div class="g {% if lenght=='2' and page.tile!=true %}g-2{% endif %} gap-2 mxw-400 mh-auto mb-4 mb-6-sm">
                 {% for entry in page.answers %}
                 {% unless page.tile %}
-                <a href="/keuzehulp/{{ entry.link }}" class="unlink button btn-ghost">{{ entry.label }}</a>
+                <a href="/keuzehulp/{{ entry.link }}" class="unlink button button--secondary">{{ entry.label }}</a>
                 {% else %}
                 <a href="/keuzehulp/{{ entry.link }}" class="unlink button-tile">
                     <div>
