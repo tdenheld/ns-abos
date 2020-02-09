@@ -1,19 +1,4 @@
-.tk-heading {
-    margin-bottom: $gutter;
-    @include font(38px, bold, $lh-title);
-    color: $ns-blue;
-    letter-spacing: -0.8px;
-
-    @include sm {
-        font-size: toRem(48px);
-    }
-
-    @include md {
-        font-size: toRem(60px);
-    }
-}
-
-.tk-safe-pay {
+.safe-pay {
     display: flex;
     align-items: center;
     margin-top: $half-gutter;
