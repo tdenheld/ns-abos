@@ -24,7 +24,7 @@
 .pos-i { position: inherit; }
 
 // nudge elements a tiny bit
-@for $i from 0 through 20 {
+@for $i from 0 through 32 {
     $y: $i * 1px;
     .top-#{$i}px {top: $y;}
     .top-min-#{$i}px {top: -$y;}
@@ -53,11 +53,6 @@
 
 
 
-// miscellaneous
-// ----------------------------------------------------------------------
-.lst-none { list-style: none; }
-
-
 // rotation
 // ----------------------------------------------------------------------
 .rotate-45  { transform: rotate(45deg); }
@@ -82,39 +77,27 @@
        Spacers
 --------------------*/
 
-/*
-	Base:
-	p = padding
-	m = margin
-	
-	Modifiers:
-	a = all
-	h = horizontal
-	v = vertical
-	t = top
-	r = right
-	b = bottom
-	l = left
-	
-	Media Query Extensions:
-     -sm = min-width $sm
-     -sm-max = min-width $sm-max (only mobile)
-     -md = min-width $md
-     -lg = min-width $lg
-*/
-
-// auto-margins
-// rem padding (NS tile padding)
 .ma-auto {margin: auto;}
 .mh-auto {margin: 0 auto;}
 .mv-auto {margin: auto 0;}
 .pa-2r {padding: 2rem;}
+.mt-nf-1px:not(:first-child) { margin-top: -1px; }
 
 @include sm {
     .ma-auto-sm {margin: auto;}
     .mh-auto-sm {margin: 0 auto;}
     .mv-auto-sm {margin: auto 0;}
+    .ml-auto-sm {margin-left: auto;}
+    .mr-auto-sm {margin-right: auto;}
     .pa-2r-sm {padding: 2rem;}    
+}
+@include m-max {
+    .ma-auto-m-max {margin: auto;}
+    .mh-auto-m-max {margin: 0 auto;}
+    .mv-auto-m-max {margin: auto 0;}
+    .ml-auto-m-max {margin-left: auto;}
+    .mr-auto-m-max {margin-right: auto;}
+    .pa-2r-m-max {padding: 2rem;}    
 }
 @include md {
     .ma-auto-md {margin: auto;}
@@ -150,79 +133,79 @@
     
     @include sm-max {
         // margin
-        .ma-#{$i}-sm-max {	@include spacer($i, margin); }
-        .mh-#{$i}-sm-max {	@include spacer($i, margin-left); @include spacer($i, margin-right); }
-        .mv-#{$i}-sm-max {	@include spacer($i, margin-top); @include spacer($i, margin-bottom); }
-        .mt-#{$i}-sm-max {	@include spacer($i, margin-top); }
-        .mb-#{$i}-sm-max {	@include spacer($i, margin-bottom); }
-        .ml-#{$i}-sm-max {	@include spacer($i, margin-left); }
-        .mr-#{$i}-sm-max {	@include spacer($i, margin-right); }
+        .ma-#{$i}-sm-max { @include spacer($i, margin); }
+        .mh-#{$i}-sm-max { @include spacer($i, margin-left); @include spacer($i, margin-right); }
+        .mv-#{$i}-sm-max { @include spacer($i, margin-top); @include spacer($i, margin-bottom); }
+        .mt-#{$i}-sm-max { @include spacer($i, margin-top); }
+        .mb-#{$i}-sm-max { @include spacer($i, margin-bottom); }
+        .ml-#{$i}-sm-max { @include spacer($i, margin-left); }
+        .mr-#{$i}-sm-max { @include spacer($i, margin-right); }
 
         // padding
-        .pa-#{$i}-sm-max {	@include spacer($i, padding); }
-        .ph-#{$i}-sm-max {	@include spacer($i, padding-left); @include spacer($i, padding-right); }
-        .pv-#{$i}-sm-max {	@include spacer($i, padding-top); @include spacer($i, padding-bottom); }
-        .pt-#{$i}-sm-max {	@include spacer($i, padding-top); }
-        .pb-#{$i}-sm-max {	@include spacer($i, padding-bottom); }
-        .pl-#{$i}-sm-max {	@include spacer($i, padding-left); }
-        .pr-#{$i}-sm-max {	@include spacer($i, padding-right); }
+        .pa-#{$i}-sm-max { @include spacer($i, padding); }
+        .ph-#{$i}-sm-max { @include spacer($i, padding-left); @include spacer($i, padding-right); }
+        .pv-#{$i}-sm-max { @include spacer($i, padding-top); @include spacer($i, padding-bottom); }
+        .pt-#{$i}-sm-max { @include spacer($i, padding-top); }
+        .pb-#{$i}-sm-max { @include spacer($i, padding-bottom); }
+        .pl-#{$i}-sm-max { @include spacer($i, padding-left); }
+        .pr-#{$i}-sm-max { @include spacer($i, padding-right); }
     }		
 	@include sm {
 		// margin
-		.ma-#{$i}-sm {	@include spacer($i, margin); }
-		.mh-#{$i}-sm {	@include spacer($i, margin-left); @include spacer($i, margin-right); }
-		.mv-#{$i}-sm {	@include spacer($i, margin-top); @include spacer($i, margin-bottom); }
-		.mt-#{$i}-sm {	@include spacer($i, margin-top); }
-		.mb-#{$i}-sm {	@include spacer($i, margin-bottom); }
-		.ml-#{$i}-sm {	@include spacer($i, margin-left); }
-		.mr-#{$i}-sm {	@include spacer($i, margin-right); }
+		.ma-#{$i}-sm { @include spacer($i, margin); }
+		.mh-#{$i}-sm { @include spacer($i, margin-left); @include spacer($i, margin-right); }
+		.mv-#{$i}-sm { @include spacer($i, margin-top); @include spacer($i, margin-bottom); }
+		.mt-#{$i}-sm { @include spacer($i, margin-top); }
+		.mb-#{$i}-sm { @include spacer($i, margin-bottom); }
+		.ml-#{$i}-sm { @include spacer($i, margin-left); }
+		.mr-#{$i}-sm { @include spacer($i, margin-right); }
 
 		// paddin-sm
-		.pa-#{$i}-sm {	@include spacer($i, padding); }
-		.ph-#{$i}-sm {	@include spacer($i, padding-left); @include spacer($i, padding-right); }
-		.pv-#{$i}-sm {	@include spacer($i, padding-top); @include spacer($i, padding-bottom); }
-		.pt-#{$i}-sm {	@include spacer($i, padding-top); }
-		.pb-#{$i}-sm {	@include spacer($i, padding-bottom); }
-		.pl-#{$i}-sm {	@include spacer($i, padding-left); }
-		.pr-#{$i}-sm {	@include spacer($i, padding-right); }
+		.pa-#{$i}-sm { @include spacer($i, padding); }
+		.ph-#{$i}-sm { @include spacer($i, padding-left); @include spacer($i, padding-right); }
+		.pv-#{$i}-sm { @include spacer($i, padding-top); @include spacer($i, padding-bottom); }
+		.pt-#{$i}-sm { @include spacer($i, padding-top); }
+		.pb-#{$i}-sm { @include spacer($i, padding-bottom); }
+		.pl-#{$i}-sm { @include spacer($i, padding-left); }
+		.pr-#{$i}-sm { @include spacer($i, padding-right); }
 	}
 	@include md {
 		// margin
-		.ma-#{$i}-md {	@include spacer($i, margin); }
-		.mh-#{$i}-md {	@include spacer($i, margin-left); @include spacer($i, margin-right); }
-		.mv-#{$i}-md {	@include spacer($i, margin-top); @include spacer($i, margin-bottom); }
-		.mt-#{$i}-md {	@include spacer($i, margin-top); }
-		.mb-#{$i}-md {	@include spacer($i, margin-bottom); }
-		.ml-#{$i}-md {	@include spacer($i, margin-left); }
-		.mr-#{$i}-md {	@include spacer($i, margin-right); }
+		.ma-#{$i}-md { @include spacer($i, margin); }
+		.mh-#{$i}-md { @include spacer($i, margin-left); @include spacer($i, margin-right); }
+		.mv-#{$i}-md { @include spacer($i, margin-top); @include spacer($i, margin-bottom); }
+		.mt-#{$i}-md { @include spacer($i, margin-top); }
+		.mb-#{$i}-md { @include spacer($i, margin-bottom); }
+		.ml-#{$i}-md { @include spacer($i, margin-left); }
+		.mr-#{$i}-md { @include spacer($i, margin-right); }
 				 
 		// paddin-md
-		.pa-#{$i}-md {	@include spacer($i, padding); }
-		.ph-#{$i}-md {	@include spacer($i, padding-left); @include spacer($i, padding-right); }
-		.pv-#{$i}-md {	@include spacer($i, padding-top); @include spacer($i, padding-bottom); }
-		.pt-#{$i}-md {	@include spacer($i, padding-top); }
-		.pb-#{$i}-md {	@include spacer($i, padding-bottom); }
-		.pl-#{$i}-md {	@include spacer($i, padding-left); }
-		.pr-#{$i}-md {	@include spacer($i, padding-right); }
+		.pa-#{$i}-md { @include spacer($i, padding); }
+		.ph-#{$i}-md { @include spacer($i, padding-left); @include spacer($i, padding-right); }
+		.pv-#{$i}-md { @include spacer($i, padding-top); @include spacer($i, padding-bottom); }
+		.pt-#{$i}-md { @include spacer($i, padding-top); }
+		.pb-#{$i}-md { @include spacer($i, padding-bottom); }
+		.pl-#{$i}-md { @include spacer($i, padding-left); }
+		.pr-#{$i}-md { @include spacer($i, padding-right); }
 	}
 	@include lg {
 		// margin
-		.ma-#{$i}-lg {	@include spacer($i, margin); }
-		.mh-#{$i}-lg {	@include spacer($i, margin-left); @include spacer($i, margin-right); }
-		.mv-#{$i}-lg {	@include spacer($i, margin-top); @include spacer($i, margin-bottom); }
-		.mt-#{$i}-lg {	@include spacer($i, margin-top); }
-		.mb-#{$i}-lg {	@include spacer($i, margin-bottom); }
-		.ml-#{$i}-lg {	@include spacer($i, margin-left); }
-		.mr-#{$i}-lg {	@include spacer($i, margin-right); }
+		.ma-#{$i}-lg { @include spacer($i, margin); }
+		.mh-#{$i}-lg { @include spacer($i, margin-left); @include spacer($i, margin-right); }
+		.mv-#{$i}-lg { @include spacer($i, margin-top); @include spacer($i, margin-bottom); }
+		.mt-#{$i}-lg { @include spacer($i, margin-top); }
+		.mb-#{$i}-lg { @include spacer($i, margin-bottom); }
+		.ml-#{$i}-lg { @include spacer($i, margin-left); }
+		.mr-#{$i}-lg { @include spacer($i, margin-right); }
 				 
 		// paddin-lg
-		.pa-#{$i}-lg {	@include spacer($i, padding); }
-		.ph-#{$i}-lg {	@include spacer($i, padding-left); @include spacer($i, padding-right); }
-		.pv-#{$i}-lg {	@include spacer($i, padding-top); @include spacer($i, padding-bottom); }
-		.pt-#{$i}-lg {	@include spacer($i, padding-top); }
-		.pb-#{$i}-lg {	@include spacer($i, padding-bottom); }
-		.pl-#{$i}-lg {	@include spacer($i, padding-left); }
-		.pr-#{$i}-lg {	@include spacer($i, padding-right); }
+		.pa-#{$i}-lg { @include spacer($i, padding); }
+		.ph-#{$i}-lg { @include spacer($i, padding-left); @include spacer($i, padding-right); }
+		.pv-#{$i}-lg { @include spacer($i, padding-top); @include spacer($i, padding-bottom); }
+		.pt-#{$i}-lg { @include spacer($i, padding-top); }
+		.pb-#{$i}-lg { @include spacer($i, padding-bottom); }
+		.pl-#{$i}-lg { @include spacer($i, padding-left); }
+		.pr-#{$i}-lg { @include spacer($i, padding-right); }
 	}
 }
 
@@ -311,6 +294,12 @@
     .mxw-#{$x} {
         max-width: #{$y};
     }
+
+    @include sm {
+        .mxw-#{$x}-sm {
+            max-width: #{$y};
+        }
+    }
 }
 
 .mxw-init {
@@ -333,25 +322,7 @@
 @for $i from 0 through 12 {
 	.gap-#{$i} { @include spacer($i, grid-gap); }
 	.col-gap-#{$i} { @include spacer($i, grid-column-gap); }
-    .row-gap-#{$i} { @include spacer($i, grid-row-gap); }
-    
-    @include sm {
-        .gap-#{$i}-sm { @include spacer($i, grid-gap); }
-        .col-gap-#{$i}-sm { @include spacer($i, grid-column-gap); }
-        .row-gap-#{$i}-sm { @include spacer($i, grid-row-gap); }
-    }
-
-    @include md  {
-        .gap-#{$i}-md  { @include spacer($i, grid-gap); }
-        .col-gap-#{$i}-md  { @include spacer($i, grid-column-gap); }
-        .row-gap-#{$i}-md { @include spacer($i, grid-row-gap); }
-    }
-
-    @include lg  {
-        .gap-#{$i}-lg  { @include spacer($i, grid-gap); }
-        .col-gap-#{$i}-lg  { @include spacer($i, grid-column-gap); }
-        .row-gap-#{$i}-lg { @include spacer($i, grid-row-gap); }
-    }
+	.row-gap-#{$i} { @include spacer($i, grid-row-gap); }
 }
 
 // fractions
@@ -675,11 +646,14 @@
 // visibility breakpoints
 // ----------------------------------------------------------------------
 .visible-xs { @include sm     { display: none; }}
+.visible-lg { @include lg-max { display: none; }}
+
 .hidden-xxs { @include xs-max { display: none; }}
-.hidden-xs {  @include sm-max { display: none; }}
-.hidden-sm {  @include sm-ex  { display: none; }}
-.hidden-md {  @include md-ex  { display: none; }}
-.hidden-lg {  @include lg     { display: none; }}
+.hidden-xs  { @include sm-max { display: none; }}
+.hidden-m   { @include m-max  { display: none; }}
+.hidden-sm  { @include sm-ex  { display: none; }}
+.hidden-md  { @include md-ex  { display: none; }}
+.hidden-lg  { @include lg     { display: none; }}
 
 // hidden objects
 // ----------------------------------------------------------------------
@@ -693,18 +667,6 @@
 /*-------------------
       Typography
 --------------------*/
-
-/*
-	Base:
-	f = font
-    fw = font-weight
-    ls = letter-spacing
-	
-	Media Query Extensions:
-     -sm = min-width $sm
-     -md = min-width $md
-     -lg = min-width $lg
-*/
 
 // font sizes
 // ----------------------------------------------------------------------
@@ -728,6 +690,63 @@
 .f80 {font-size: toRem(80px);}
 .f96 {font-size: toRem(96px);}
 
+@include xs {
+	.f16-xs {font-size: toRem(16px);}
+	.f18-xs {font-size: toRem(18px);}
+	.f20-xs {font-size: toRem(20px);}
+	.f24-xs {font-size: toRem(24px);}
+	.f28-xs {font-size: toRem(28px);}
+	.f30-xs {font-size: toRem(30px);}
+	.f32-xs {font-size: toRem(32px);}
+	.f36-xs {font-size: toRem(36px);}
+	.f38-xs {font-size: toRem(38px);}
+	.f40-xs {font-size: toRem(40px);}
+	.f48-xs {font-size: toRem(48px);}
+	.f56-xs {font-size: toRem(56px);}
+	.f60-xs {font-size: toRem(60px);}
+	.f64-xs {font-size: toRem(64px);}
+	.f72-xs {font-size: toRem(72px);}
+	.f80-xs {font-size: toRem(80px);}
+	.f96-xs {font-size: toRem(96px);}
+}
+@include xs-max {
+	.f16-xs-max {font-size: toRem(16px);}
+	.f18-xs-max {font-size: toRem(18px);}
+	.f20-xs-max {font-size: toRem(20px);}
+	.f24-xs-max {font-size: toRem(24px);}
+	.f28-xs-max {font-size: toRem(28px);}
+	.f30-xs-max {font-size: toRem(30px);}
+	.f32-xs-max {font-size: toRem(32px);}
+	.f36-xs-max {font-size: toRem(36px);}
+	.f38-xs-max {font-size: toRem(38px);}
+	.f40-xs-max {font-size: toRem(40px);}
+	.f48-xs-max {font-size: toRem(48px);}
+	.f56-xs-max {font-size: toRem(56px);}
+	.f60-xs-max {font-size: toRem(60px);}
+	.f64-xs-max {font-size: toRem(64px);}
+	.f72-xs-max {font-size: toRem(72px);}
+	.f80-xs-max {font-size: toRem(80px);}
+	.f96-xs-max {font-size: toRem(96px);}
+}
+@include sm-max {
+	.f16-sm-max {font-size: toRem(16px);}
+	.f18-sm-max {font-size: toRem(18px);}
+	.f20-sm-max {font-size: toRem(20px);}
+	.f24-sm-max {font-size: toRem(24px);}
+	.f28-sm-max {font-size: toRem(28px);}
+	.f30-sm-max {font-size: toRem(30px);}
+	.f32-sm-max {font-size: toRem(32px);}
+	.f36-sm-max {font-size: toRem(36px);}
+	.f38-sm-max {font-size: toRem(38px);}
+	.f40-sm-max {font-size: toRem(40px);}
+	.f48-sm-max {font-size: toRem(48px);}
+	.f56-sm-max {font-size: toRem(56px);}
+	.f60-sm-max {font-size: toRem(60px);}
+	.f64-sm-max {font-size: toRem(64px);}
+	.f72-sm-max {font-size: toRem(72px);}
+	.f80-sm-max {font-size: toRem(80px);}
+	.f96-sm-max {font-size: toRem(96px);}
+}
 @include sm {
 	.f16-sm {font-size: toRem(16px);}
 	.f18-sm {font-size: toRem(18px);}
@@ -790,7 +809,7 @@
 // ----------------------------------------------------------------------
 .lh-none  { line-height: 0; }
 .lh-solid { line-height: $lh-solid; }
-.lh-title { line-height: $lh-title; }
+.lh-title, .lh-title div { line-height: $lh-title; }
 .lh-copy  { line-height: $lh-copy; }
 
 @include sm {
@@ -837,7 +856,6 @@
 // ----------------------------------------------------------------------
 .fw-normal {font-weight: normal;}
 .fw-b {font-weight: bold;}
-.fw-bb b {color: $ns-blue;}
 @for $i from 1 through 9 {
 	$weight: $i * 100;
 	.fw-#{$weight} {
@@ -852,10 +870,8 @@
 
 // letter-spacing
 // ----------------------------------------------------------------------
-.ls-normal { letter-spacing: initial;}
-.ls-3 {letter-spacing: -0.3px}
-.ls-5 {letter-spacing: -0.5px}
-.ls-8 {letter-spacing: -0.8px}
+.ls-normal {letter-spacing: initial;}
+.ls-heading {letter-spacing: $ls-heading;}
 
 // word wraps
 // ----------------------------------------------------------------------
@@ -869,21 +885,6 @@
       Text align
 --------------------*/
 
-/*
-	Base:
-	txt = text-align
-	
-	Modifiers
-    l = left
-    r = right
-    c = center
-    j = justify
-    
-	Media Query Extensions:
-     -sm = min-width $sm
-     -md = min-width $md
-     -lg = min-width $lg
-*/
 .txt-l  { text-align: left; }
 .txt-r  { text-align: right; }
 .txt-c  { text-align: center; }
@@ -894,6 +895,12 @@
 	.txt-r-sm  { text-align: right; }
 	.txt-c-sm  { text-align: center; }
 	.txt-j-sm  { text-align: justify; }
+}
+@include m {
+	.txt-l-m  { text-align: left; }
+	.txt-r-m  { text-align: right; }
+	.txt-c-m  { text-align: center; }
+	.txt-j-m  { text-align: justify; }
 }
 @include md {
 	.txt-l-md  { text-align: left; }
@@ -917,6 +924,7 @@
 .svg-blue svg {fill: $ns-blue;}
 .svg-light-blue svg {fill: $ns-light-blue;}
 .svg-red svg {fill: $ns-red-alert;}
+.svg-yellow svg {fill: $ns-yellow;}
 .svg-white svg {fill: $ns-white;}
 .svg-green svg {fill: $ns-green;}
 .svg-green-sexy svg {fill: $ns-green-sexy;}
@@ -929,34 +937,14 @@
 .svg-grey-6b svg {fill: $ns-grey-6b;}
 .svg-grey-7 svg {fill: $ns-grey-7;}
 .svg-grey-8 svg {fill: $ns-grey-8;}
-.svg-link { svg {cursor: pointer; transition: $fade-link; fill: $ns-light-blue;} &:hover {svg {fill: $ns-blue;}}}
-
+.svg-link {svg {cursor: pointer; transition: $fade-link; fill: $ns-light-blue;} &:hover {svg {fill: $ns-blue;}}}
+.svg-btn {display: inline-flex; justify-content: center; align-items: center; width: 35px; height: 35px; cursor: pointer; line-height: 0; svg {transition: $fade-link; fill: $ns-light-blue;} &:hover {svg {fill: $ns-blue;}}}
 
 
 
 /*-------------------
        Borders
 --------------------*/
-
-/*
-	Base:
-	bo = border
-	br = border-radius
-	
-	Modifiers:
-	-a = all
-	-h = horizontal
-	-v = vertical
-	-t = top
-	-r = right
-	-b = bottom
-	-l = left
-	
-	Media Query Extensions:
-     -sm = min-width $sm
-     -md = min-width $md
-     -lg = min-width $lg
-*/
 
 // default border is $ns-grey-7 (#e8e8e6)
 .bo-none {border: none;}
@@ -1021,12 +1009,6 @@
        Shadows
 --------------------*/
 
-/*
-	Base:
-	bs = box shadow
-	ts = text shadow
-*/
-
 // box shadows
 // -------------------------
 .bs-none {box-shadow: none;}
@@ -1048,16 +1030,6 @@
 /*-------------------
      Backgrounds
 --------------------*/
-
-/*
-	Base:
-	bg = background
-	gd = gradient
-	
-	Modifiers:
-	-r = radial
-	-110 = degrees
-*/
 
 // size
 // --------------------------------------------
@@ -1098,7 +1070,7 @@
 
 // radial
 .gd-r-yellow {background: radial-gradient(circle at 50% 50%, #FFD342 0%, $ns-yellow 100%);}
-.gd-r-pale-blue {background: radial-gradient(circle at 75% 50%, #DDF2FF 0%, #B1E0FF 100%);}
+.gd-r-pale-blue {background: radial-gradient(circle at 50% 50%, #DDF2FF 0%, #B1E0FF 100%);}
 .gd-r70-50-yellow {background: radial-gradient(circle at 70% 50%, #FFE48A 0%, $ns-yellow 100%);}
 .gd-r30-50-yellow {background: radial-gradient(circle at 50% 70%, #FFE48A 0%, $ns-yellow 100%);}
 .gd-r-vivid {background: radial-gradient(circle at 50% 50%, #8ad4e4 0%, #0d6b9e 100%);}
