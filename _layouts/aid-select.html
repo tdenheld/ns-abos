@@ -9,23 +9,9 @@ layout: aid
         </div>
         <div class="mxw-800 mh-auto mb-4 mb-6-sm">
             <div class="g g-2-sm col-gap-3 col-gap-8-md row-gap-8">
-                <div>
-                    <h3 class="f20 f24-sm f-blue txt-c mb-1">Flex abonnementen</h3>
-                    <div class="bo-b-blue mb-4"></div>
-                    <div class="g gap-3">
-                        {% for result in page.select-flex %}
-                        {% capture i %}{{ result.title }}{% endcapture %}
-                        {% assign results=site.data.abos | where: 'title', i %}
-
-                        {% for entry in results %}
-                        {% include abo-tile-select.html type='Flex' %}
-                        {% endfor %}
-                        {% endfor %}
-                    </div>
-                </div>
 
                 <div>
-                    <h3 class="f20 f24-sm f-blue txt-c mb-1">Klassieke abonnementen</h3>
+                    <h3 class="f20 f24-sm f-blue txt-c mb-1">Jaarabonnementen op saldo</h3>
                     <div class="bo-b-blue mb-4"></div>
                     <div class="g gap-3">
                         {% for result in page.select-ros %}
@@ -39,14 +25,29 @@ layout: aid
                     </div>
                 </div>
 
+                <div>
+                    <h3 class="f20 f24-sm f-blue txt-c mb-1">NS Flex abonnementen</h3>
+                    <div class="bo-b-blue mb-4"></div>
+                    <div class="g gap-3">
+                        {% for result in page.select-flex %}
+                        {% capture i %}{{ result.title }}{% endcapture %}
+                        {% assign results=site.data.abos | where: 'title', i %}
+
+                        {% for entry in results %}
+                        {% include abo-tile-select.html type='NS Flex' %}
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+                </div>
+
             </div>
 
             <div class="bo-b-blue mb-4 pb-4"></div>
 
         </div>
         <div class="txt-c mxw-500 mh-auto a a-fi a-del-500 pb-4">
-            <p class="f18 f20-sm f-blue mb-3">{{ page.description }}</p>
-            <a class="button">Naar inloggen</a>
+            <p class="f18 f20-sm f-blue mb-3">Weet je niet meer welk abonnement je hebt? Ga naar Mijn NS en haal je gegevens op.</p>
+            <a class="button">Inloggen</a>
         </div>
     </div>
 </section>

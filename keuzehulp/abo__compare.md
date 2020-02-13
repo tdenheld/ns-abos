@@ -22,7 +22,7 @@ table:
         - text: "<div class'no-wrap'>Op saldo</div>"
           tooltip: Via de automaat vooraf saldo laden
         - text: Achteraf
-          tooltip: Betaal achteraf doormiddel van een factuur
+          tooltip: Betaal achteraf door middel van een factuur
       class: bo-t
     - col:
         - text: Kosten
